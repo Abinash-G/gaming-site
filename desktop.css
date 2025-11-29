@@ -49,7 +49,7 @@ body {
     margin: 0;
     padding-top: 80px;
     overflow-x: hidden;
-    height: 100vh;
+    min-height: 100vh;
     cursor: url('./Mouse/black.svg') 4 3, auto !important;
     font-family: "Nunito", sans-serif !important;
 }

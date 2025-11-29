@@ -13,19 +13,16 @@
     src: url('./Fonts/Deltha.otf') format('opentype'),
 }
 
-#video-background-mobile {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-    filter: brightness(0.5) blur(0.0px);
-}
-
+#video-background-mobile,
 #video-background {
-    display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5);
 }
 
 a {
@@ -508,4 +505,3 @@ body {
     border-radius: 1rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
-

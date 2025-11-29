@@ -3,6 +3,7 @@
 
 <head>
     <title>Gaming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,12 +22,14 @@
 </head>
 
 <body style="color: white;">
-    <video autoplay muted loop id="video-background">
+    <video autoplay muted loop playsinline id="video-background" poster="./Images/purple-sunset.jpg">
         <source src="./Images/purple-sunset..mp4" type="video/mp4">
-    </video>
-    <video autoplay muted loop id="video-background-mobile">
+      </video>
+      
+      <video autoplay muted loop playsinline id="video-background-mobile" poster="./Images/skysparxx.jpg">
         <source src="./Images/skysparxx.mp4" type="video/mp4">
-    </video>
+      </video>
+      
     <div id="cursor-glow"></div>
     <div id="navSparkles"></div>
     <span id="bs"></span>
