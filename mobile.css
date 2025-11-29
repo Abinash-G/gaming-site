@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&family=Roboto:wght@300;400;700&display=swap');
+
+.orbitron {
+    font-family: 'Orbitron', sans-serif !important;
+}
+
 @font-face {
     font-family: 'Robus';
     src: url('./Fonts/Fun Games.otf') format('opentype'),
@@ -13,16 +19,42 @@
     src: url('./Fonts/Deltha.otf') format('opentype'),
 }
 
+@font-face {
+    font-family: 'Aquatico';
+    src: url('./Fonts/Aquatico.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: 'Kano';
+    src: url('./Fonts/Kano.otf') format('opentype'),
+}
+
+.aquatico {
+    font-family: Aquatico;
+}
+
+.deltha {
+    font-family: Deltha;
+}
+
+.kano {
+    font-family: Kano;
+}
+
+.robus {
+    font-family: Robus;
+}
+
 #video-background-mobile,
 #video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-  filter: brightness(0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5);
 }
 
 a {
@@ -167,9 +199,10 @@ a:hover {
 
 body {
     margin: 0;
-    padding-top: 80px;
+    padding-top: 60px;
     overflow-x: hidden;
     height: 100vh;
+    font-family: "Nunito", sans-serif !important;
 }
 
 #auto-scroll-items {
@@ -504,4 +537,135 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 1rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+#Right-bar {
+    padding: 10px;
+}
+
+.shelves-items-row {
+    padding: 5px;
+    margin: 0 !important;
+}
+
+#trending-list img {
+    width: 80px !important;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+#trending-box {
+    padding: 24px !important;
+}
+
+#page {
+    padding: 24px !important;
+}
+
+#mobile-shelves {
+    margin: 0 !important;
+    padding: 0px !important;
+}
+
+/* mobile-friendly search results */
+
+#searchResults {
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed !important;
+    z-index: 20000 !important;
+    display: none;
+    /* keep hidden by default */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* MOBILE: force brand icon centered & kill brand-text jump */
+@media (max-width: 767px) {
+
+    /* make brand a true flex item and vertically center */
+    .navbar-brand {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+    }
+
+    /* ensure icon vertically centered */
+    .navbar-brand i {
+        margin: 0;
+        display: block;
+        align-self: center;
+        font-size: 1.4rem;
+        position: absolute;
+        left: 8vw;
+    }
+
+    /* completely hide animated brand text on mobile and disable animations */
+    .brand-text,
+    .navbar-brand .brand-text,
+    #footer-logo .brand-text {
+        display: none !important;
+        opacity: 0 !important;
+        max-width: 0 !important;
+        transform: none !important;
+        transition: none !important;
+        animation: none !important;
+    }
+
+    /* defensive: if some rule is pushing it up, lock alignment */
+    .navbar-toggler,
+    #nav-search-form,
+    .navbar-collapse {
+        align-self: center !important;
+    }
+
+    /* small tweak if the icon still looks slightly high */
+    #myNavbar .container-fluid {
+        align-items: center !important;
+        height: 58px;
+        /* keep locked height */
+    }
+
+    #nav-search-form {
+        position: absolute;
+        right: 17vw;
+    }
+}
+
+/* Glass shine effect */
+
+@keyframes shine {
+    0% {
+        left: -150%;
+    }
+
+    20%,
+    100% {
+        left: 150%;
+    }
+}
+
+.glass-shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-shine::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: skewX(-25deg);
+    animation: shine 6s infinite;
+    pointer-events: none;
 }

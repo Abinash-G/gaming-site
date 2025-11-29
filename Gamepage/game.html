@@ -99,6 +99,11 @@
       border-right: none !important;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
+
+    .overlay-content {
+      position: absolute;
+      top: 31vh;
+    }
   }
 
   ::-webkit-scrollbar {
@@ -221,6 +226,35 @@
     box-shadow: var(--glass-shadow);
     border-radius: 16px;
   }
+
+  @keyframes shine {
+    0% {
+      left: -150%;
+    }
+
+    20%,
+    100% {
+      left: 150%;
+    }
+  }
+
+  .glass-shine {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glass-shine::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: skewX(-25deg);
+    animation: shine 6s infinite;
+    pointer-events: none;
+  }
 </style>
 
 <body>
@@ -237,10 +271,12 @@
       <button class="btn text-white back-btn" onclick="history.back()">
         <i class="fa-solid fa-chevron-left"></i>
       </button>
-      <h1 id="game-title" class="fw-bold display-4">Loading...</h1>
-      <button id="trailer-btn" class="btn btn-glass rounded-pill fw-bold px-4 py-2 pop">
-        <i class="fa-solid fa-play me-2"></i> Trailer
-      </button>
+      <div class="overlay-content">
+        <h1 id="game-title" class="fw-bold display-4">Loading...</h1>
+        <button id="trailer-btn" class="btn btn-glass rounded-pill fw-bold px-4 py-2 pop glass-shine">
+          <i class="fa-solid fa-play me-2"></i> Trailer
+        </button>
+      </div>
     </div>
   </div>
 

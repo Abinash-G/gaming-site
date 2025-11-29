@@ -567,6 +567,15 @@ a:hover {
     display: none;
 }
 
+#searchResults {
+    scrollbar-width: none;      /* Firefox */
+    -ms-overflow-style: none;   /* IE/Edge */
+}
+
+#searchResults::-webkit-scrollbar {
+    display: none;              /* Chrome/Safari */
+}
+
 /* Each search item card */
 .search-row {
     min-height: 64px;
@@ -847,3 +856,143 @@ a:hover {
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
+@media (min-width: 992px) {
+    /* 1. Target the Row: Force columns to equal height */
+    #page > .row {
+        align-items: stretch;
+    }
+
+    /* 2. Carousel Column: Center the carousel vertically if the right bar is taller */
+    #corousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* 3. Carousel Images: Keep strict 16:9 ratio */
+    .carousel-item img {
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    /* 4. Right Bar (Trending): Force full height to match Carousel */
+    #Right-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #trending-box {
+        height: 100% !important; /* Fills the height defined by the carousel */
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    /* 5. Internal Spacing: distribute items evenly */
+    #trending-list {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; /* Perfect padding calculation */
+    }
+
+    #trending-list hr {
+        display: none;
+    }
+
+    @keyframes glass-shine {
+    0% { left: -150%; }
+    20% { left: 150%; } /* Sweeps across quickly */
+    100% { left: 150%; } /* Pauses before restarting */
+}
+
+/* 2. Setup the container */
+#trending-box {
+    position: relative; /* Anchors the shine */
+    overflow: hidden;   /* Keeps shine inside borders */
+}
+
+/* 3. The Shine Overlay */
+#trending-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 80%;
+    height: 100%;
+    /* Subtle white gradient */
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(255, 255, 255, 0.1) 50%, 
+        transparent 100%
+    );
+    transform: skewX(-25deg);
+    animation: glass-shine 6s infinite ease-in-out;
+    pointer-events: none; /* Ensures you can still click links behind it */
+}
+}
+
+@keyframes glass-shine {
+    0% { left: -150%; }
+    20% { left: 150%; } /* Sweeps across quickly */
+    100% { left: 150%; } /* Pauses before restarting */
+}
+
+/* 2. Setup the container */
+#trending-box {
+    position: relative; /* Anchors the shine */
+    overflow: hidden;   /* Keeps shine inside borders */
+}
+
+/* 3. The Shine Overlay */
+#trending-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 80%;
+    height: 100%;
+    /* Subtle white gradient */
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(255, 255, 255, 0.1) 50%, 
+        transparent 100%
+    );
+    transform: skewX(-25deg);
+    animation: glass-shine 6s infinite ease-in-out;
+    pointer-events: none; /* Ensures you can still click links behind it */
+}
+
+/* Glass shine effect */
+
+@keyframes shine {
+    0% {
+      left: -150%;
+    }
+
+    20%,
+    100% {
+      left: 150%;
+    }
+  }
+
+  .glass-shine {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glass-shine::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: skewX(-25deg);
+    animation: shine 6s infinite;
+    pointer-events: none;
+  }

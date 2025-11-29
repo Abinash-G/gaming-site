@@ -249,41 +249,111 @@ function renderStories2(stories) {
 
 // Search
 
-// safer refs: pick the button inside the form (avoids duplicate-id problem)
-const navForm = document.getElementById('nav-search-form');
-const searchInput = document.getElementById('Nav-Search');
-const searchBtn = navForm ? navForm.querySelector('button') : document.getElementById('Nav-Search-icon');
+// compact unified search (mobile+desktop)
+// expects: #Nav-Search (input), #nav-search-form (form), optional global `fuse` or `window.GAMES`
+(() => {
+  const $in = id => document.getElementById(id);
+  const searchInput = $in('Nav-Search');
+  const form = $in('nav-search-form');
+  let resultsBox = $in('searchResults') || (() => { const d = document.createElement('div'); d.id='searchResults'; document.body.appendChild(d); return d; })();
 
-// prevent form submit (stops Enter from refreshing)
-if (navForm) navForm.addEventListener('submit', e => e.preventDefault());
+  // base styles (safety)
+  Object.assign(resultsBox.style, {
+    position: 'fixed', zIndex: 20000, display: 'none', boxSizing: 'border-box',
+    maxHeight: '60vh', overflowY: 'auto', padding: '8px'
+  });
+  resultsBox.style.scrollbarWidth = 'none';
+  resultsBox.style.msOverflowStyle = 'none';
 
-// toggle (fixed)
-if (searchBtn) {
-  searchBtn.addEventListener('click', (e) => {
+  const escapeHtml = s => String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  function render(items){
+    resultsBox.innerHTML = items.length ? items.map(it=>`
+      <a class="search-row" href="${escapeHtml(it.link||'#')}">
+        <img src="${escapeHtml(it.img||'')}" alt="${escapeHtml(it.title||'')}" />
+        <div class="search-info">
+          <div class="title">${escapeHtml(it.title||'Untitled')}</div>
+          <div class="rating">${it.rating? '⭐ '+escapeHtml(it.rating): ''}</div>
+        </div>
+      </a>
+    `).join('') : `<div class="search-no-results">No results found</div>`;
+  }
+
+  function position(){
+    const r = searchInput.getBoundingClientRect(), scrollY = window.scrollY || 0, vw = Math.max(document.documentElement.clientWidth, window.innerWidth);
+    if (resultsBox.parentElement !== document.body) document.body.appendChild(resultsBox);
+    const top = r.bottom + scrollY + 8;
+    if (vw <= 767) { resultsBox.style.left='8px'; resultsBox.style.width='calc(100% - 16px)'; resultsBox.style.top=top+'px'; }
+    else { resultsBox.style.left = r.left + 'px'; resultsBox.style.width = Math.max(r.width,320) + 'px'; resultsBox.style.top = top + 'px'; }
+  }
+
+  function show(){ position(); resultsBox.style.display='block'; }
+  function hide(collapse=false){ resultsBox.style.display='none'; if(collapse){ searchInput.value=''; searchInput.style.width='0'; searchInput.style.display='none'; } }
+
+  // search logic — replace with your fuse/runSearch if needed
+  function doSearch(q){
+    if (!q) return [];
+    if (typeof fuse !== 'undefined') return fuse.search(q).map(r=>r.item);
+    if (typeof runSearch === 'function') return runSearch(q);
+    if (Array.isArray(window.GAMES)) return window.GAMES.filter(g=> (g.title||'').toLowerCase().includes(q.toLowerCase()));
+    return [];
+  }
+
+  // input handler
+  searchInput.addEventListener('input', ()=> {
+    const q = searchInput.value.trim();
+    if (!q) return hide();
+    const res = doSearch(q);
+    render(res);
+    show();
+  });
+
+  // toggle button(s) — hide magnifier on mobile when opened
+  Array.from(document.querySelectorAll('#nav-search-form button[type="button"]')).forEach(btn=>{
+    btn.addEventListener('click', e=>{
+      e.stopPropagation();
+      const open = searchInput.style.display !== 'none' && searchInput.style.width && searchInput.style.width !== '0px';
+      if (!open) {
+        searchInput.style.display='block';
+        setTimeout(()=> searchInput.style.width='220px', 10);
+        searchInput.focus();
+        if (window.innerWidth <= 767) btn.style.display = 'none'; // hide icon on mobile when opening
+      } else {
+        // closing: restore any hidden buttons
+        document.querySelectorAll('#nav-search-form button').forEach(b=>b.style.display='flex');
+        hide(true);
+      }
+    });
+  });
+
+  // ensure search icon reappears if input collapsed by ESC/outside click
+  document.addEventListener('keydown', e => { if (e.key==='Escape') { document.querySelectorAll('#nav-search-form button').forEach(b=>b.style.display='flex'); hide(true); } });
+
+  // clicks inside results: open same tab (prevent new tab)
+  resultsBox.addEventListener('click', e => {
+    const a = e.target.closest('a');
+    if (!a) return;
     e.preventDefault();
-    e.stopPropagation();            // <- prevents document click from closing immediately
-    const hidden = getComputedStyle(searchInput).display === 'none';
-    if (hidden) {
-      searchInput.style.display = 'block';
-      // small delay so CSS transition works
-      setTimeout(() => searchInput.style.width = '200px', 10);
-      searchInput.focus();
-    } else {
-      searchInput.style.width = '0';
-      setTimeout(() => { searchInput.style.display = 'none'; }, 300);
+    const href = a.getAttribute('href') || '#';
+    if (href && href !== '#') window.location.href = href;
+    hide(true);
+    // restore search icon(s)
+    document.querySelectorAll('#nav-search-form button').forEach(b=>b.style.display='flex');
+  });
+
+  // click outside -> hide and restore icons
+  document.addEventListener('click', e => {
+    if (!resultsBox.contains(e.target) && e.target !== searchInput && !Array.from(document.querySelectorAll('#nav-search-form button')).some(b=>b.contains(e.target))) {
+      document.querySelectorAll('#nav-search-form button').forEach(b=>b.style.display='flex');
+      hide();
     }
   });
-}
 
-// global click: close only if click is outside the nav form
-document.addEventListener('click', (ev) => {
-  if (!navForm || navForm.contains(ev.target)) return; // ignore clicks inside nav
-  // hide input
-  if (searchInput && getComputedStyle(searchInput).display !== 'none') {
-    searchInput.style.width = '0';
-    setTimeout(() => { searchInput.style.display = 'none'; }, 300);
-  }
-});
+  // reposition on resize/orientation
+  window.addEventListener('resize', ()=> { if (resultsBox.style.display==='block') position(); });
+  window.addEventListener('orientationchange', ()=> { if (resultsBox.style.display==='block') position(); });
+
+})();
 
 // Sparkles in NavBar
 
@@ -306,7 +376,7 @@ fetch('./home.json')
     if (!data.news) return;
     const html = data.news.map(item => `
       <a href="${item.link}">
-    <div class="row mx-0 mx-md-5 mt-2 mb-2 news"
+    <div class="row mx-0 mx-md-5 mt-2 mb-2 news glass-shine"
          style="background-color:rgba(0,0,0,0.25); backdrop-filter:blur(8px); border-radius:12px;">  
       <div class="col-12 col-md-4 p-4">
         <img src="${item.img}" 
@@ -488,3 +558,90 @@ setTimeout(hideLoader, 5000); // 5000ms = 5 seconds
   window.addEventListener('resize', positionResults);
 })();
 
+(function(){
+  const MOBILE_MAX = 767;
+  const proxyHost = 'https://images.weserv.nl/';
+
+  function makeProxyUrl(orig, w=960, q=45){
+    if (!orig) return orig;
+    if (/^(data:|blob:)/.test(orig)) return orig;
+    try {
+      const u = new URL(orig, location.href);
+      if (u.href.startsWith(proxyHost)) return u.href;
+      const hostPath = u.href.replace(/^https?:\/\//,'');
+      return `${proxyHost}?url=${encodeURIComponent(hostPath)}&w=${w}&q=${q}`;
+    } catch(e){
+      return orig;
+    }
+  }
+
+  function applyLowQuality(img){
+    if (img.dataset.lqApplied) return;
+    const orig = img.dataset.origSrc || img.getAttribute('src') || img.src;
+    img.dataset.origSrc = orig;
+    img.loading = img.loading || 'lazy';
+    img.decoding = img.decoding || 'async';
+
+    const p320 = makeProxyUrl(orig, 320, 40);
+    const p640 = makeProxyUrl(orig, 640, 35);
+    const p960 = makeProxyUrl(orig, 960, 30);
+
+    // set a small low-quality src immediately, keep srcset for responsive picks
+    img.src = p320;
+    img.srcset = `${p320} 320w, ${p640} 640w, ${p960} 960w`;
+    img.sizes  = '(max-width: 767px) 100vw, 960px';
+
+    // remove any pixelated rendering — keep normal smooth rendering
+    img.style.imageRendering = '';
+
+    function onError(){
+      img.removeEventListener('error', onError);
+      if (img.dataset.origSrc) {
+        img.src = img.dataset.origSrc;
+        img.removeAttribute('srcset');
+        img.removeAttribute('sizes');
+        img.style.imageRendering = '';
+        delete img.dataset.lqApplied;
+        console.warn('Proxied image failed, reverted to original:', img.dataset.origSrc);
+      }
+    }
+    img.addEventListener('error', onError);
+
+    img.dataset.lqApplied = '1';
+  }
+
+  function revertImg(img){
+    if (img.dataset.origSrc && window.innerWidth > MOBILE_MAX){
+      img.src = img.dataset.origSrc;
+      img.removeAttribute('srcset');
+      img.removeAttribute('sizes');
+      img.style.imageRendering = '';
+      delete img.dataset.lqApplied;
+    }
+  }
+
+  function runOnce(){
+    document.querySelectorAll('img').forEach(img=>{
+      if (window.innerWidth <= MOBILE_MAX) applyLowQuality(img);
+      else revertImg(img);
+    });
+  }
+
+  window.addEventListener('resize', (()=>{
+    let t; return ()=>{ clearTimeout(t); t=setTimeout(runOnce,150); };
+  })());
+
+  document.addEventListener('DOMContentLoaded', runOnce);
+
+  new MutationObserver(muts=>{
+    muts.forEach(m=>{
+      m.addedNodes && m.addedNodes.forEach(n=>{
+        if (n.nodeType===1 && n.tagName==='IMG') {
+          if (window.innerWidth <= MOBILE_MAX) applyLowQuality(n);
+        } else if (n.querySelectorAll){
+          n.querySelectorAll('img').forEach(img => { if (window.innerWidth <= MOBILE_MAX) applyLowQuality(img); });
+        }
+      });
+    });
+  }).observe(document.documentElement, {childList:true, subtree:true});
+})();
