@@ -199,7 +199,7 @@ a:hover {
 
 body {
     margin: 0;
-    padding-top: 60px;
+    padding-top: 80px;
     overflow-x: hidden;
     height: 100vh;
     font-family: "Nunito", sans-serif !important;
@@ -559,7 +559,7 @@ body {
 }
 
 #page {
-    padding: 24px !important;
+    padding: 10px 32px !important;
 }
 
 #mobile-shelves {
