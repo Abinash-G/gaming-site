@@ -558,6 +558,8 @@ setTimeout(hideLoader, 5000); // 5000ms = 5 seconds
   window.addEventListener('resize', positionResults);
 })();
 
+// Data Saver for mobile
+
 (function(){
   const MOBILE_MAX = 767;
   const proxyHost = 'https://images.weserv.nl/';
