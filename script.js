@@ -12,8 +12,8 @@ async function loadData() {
 
 function createGameElement(game) {
   return `<a href="${game.link}"><div class="col-6 col-sm-4 col-md-3 col-lg-2">
-      <div class="m-0 p-2" style="box-shadow: 1px 1px 3px black; border-radius: 10px; background-color: rgba(0,0,0,0.25); backdrop-filter: blur(10px);">
-        <img style="border-radius:10px; aspect-ratio:10/12; object-fit:cover; object-position:top;" src="${game.img}" class="d-block w-100" alt="Game Image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/4B5563/FFFFFF?text=No+Image'">
+      <div class="m-0 p-2" style="border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 1px 1px 3px black; border-radius: 12px; background-color: rgba(0,0,0,0.25); backdrop-filter: blur(10px);">
+        <img style="border-radius:12px; aspect-ratio:10/12; object-fit:cover; object-position:top;" src="${game.img}" class="d-block w-100" alt="Game Image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/4B5563/FFFFFF?text=No+Image'">
         <div class="text-white h5" style="text-align:center; font-size:1rem;">${game.title}</div>
       </div>
     </div></a>`;
@@ -42,7 +42,7 @@ function renderStories(stories) {
   container.innerHTML = (stories || []).map(story => `
     <div class="col-12 col-md-4 p-2 p-md-1">
       <a href="${story.link}" style="display:block;height:100%;">
-        <div id="Stories" class="m-0 p-2 d-flex flex-column justify-content-between story-card-wrapper" style="border-radius:12px;backdrop-filter:blur(10px);height:100%;">
+        <div id="Stories" class="m-0 p-2 d-flex flex-column justify-content-between story-card-wrapper" style="border-radius:12px;backdrop-filter:blur(10px);height:100%;border: 1px solid rgba(255, 255, 255, 0.2);">
           <img src="${story.img}" class="d-block w-100" style="border-radius:10px;aspect-ratio:16/9;object-fit:cover;object-position:top;">
           <div class="text-white h5 mt-2" style="text-align:center;font-size:1rem;font-weight:600;">${story.title}</div>
           <div class="p-1 flex-grow-1" style="opacity: 0.6;">${story.description}</div>
@@ -59,7 +59,7 @@ function renderTrending(trending) {
   list.innerHTML = trending.map((item, index) => `
       <a href="${item.link}">
         <div class="row shelves-items-row align-items-center m-lg-2 m-sm-1 mb-0">
-          <div class="col-4"><img src="${item.img}" class="d-block w-100" style="border-radius:10px; aspect-ratio:1/1; object-fit:cover;" onerror="this.onerror=null;this.src='https://placehold.co/100x100/4B5563/FFFFFF?text=No+Image'"></div>
+          <div class="col-4"><img src="${item.img}" class="d-block w-100" style="border-radius:10px; aspect-ratio:1/1; object-fit:cover; " onerror="this.onerror=null;this.src='https://placehold.co/100x100/4B5563/FFFFFF?text=No+Image'"></div>
           <div class="col-8"><div class="h6 mb-1">${item.title}</div><div class="text-white-50 d-none d-sm-block" style="font-size:small;">${item.description}</div></div>
         </div>
       </a>${index < trending.length - 1 ? '<hr>' : ''}
@@ -176,7 +176,7 @@ function renderStories2(stories) {
       <div class="col-12 col-md-4 p-2 p-md-1">
           <a href="${story.link}" style="display:block;height:100%;">
               <div id="Stories" class="m-0 p-2 d-flex flex-column justify-content-between story-card-wrapper"
-                   style="border-radius:12px;backdrop-filter:blur(10px);height:100%;">
+                   style="border-radius:12px;backdrop-filter:blur(10px);height:100%;border: 1px solid rgba(255, 255, 255, 0.2);">
                   <img src="${story.img}" class="d-block w-100"
                        style="border-radius:10px;aspect-ratio:16/9;object-fit:cover;object-position:top;">
                   <div class="text-white h5 mt-2" style="text-align:center;font-size:1rem;font-weight:600;">
@@ -377,7 +377,7 @@ fetch('./home.json')
     const html = data.news.map(item => `
       <a href="${item.link}">
     <div class="row mx-0 mx-md-5 mt-2 mb-2 news glass-shine"
-         style="background-color:rgba(0,0,0,0.25); backdrop-filter:blur(8px); border-radius:12px;">  
+         style="background-color:rgba(0,0,0,0.25); backdrop-filter:blur(8px); border-radius:12px; border: 1px solid rgba(255, 255, 255, 0.1);">  
       <div class="col-12 col-md-4 p-4">
         <img src="${item.img}" 
              style="border-radius:12px; width:100%; height:250px; object-fit:cover;">
