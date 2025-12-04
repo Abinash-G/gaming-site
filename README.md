@@ -2,22 +2,13 @@
 
 A stylish gaming-themed website with **Glassmorphism UI** and **smooth micro-animations**, giving a premium futuristic feel — optimized for both desktop & mobile users.
 
-<style>
-  .glow-img {
-    border-radius: 12px;
-    box-shadow: 0 0 18px rgba(0, 255, 200, 0.6),
-                0 0 35px rgba(0, 140, 255, 0.4),
-                0 0 55px rgba(255, 0, 200, 0.3);
-  }
-</style>
-
 <p align="center">
-  <img class="glow-img" src="https://github.com/user-attachments/assets/bd77af38-264d-4feb-b502-0bc762632c97" width="45%" height="250px" />
-  <img class="glow-img" src="https://github.com/user-attachments/assets/7a6b9644-649b-4572-84e8-0a21530cde45" width="45%" height="250px" />
+  <img src="https://github.com/user-attachments/assets/bd77af38-264d-4feb-b502-0bc762632c97" width="45%" height="250px" />
+  <img src="https://github.com/user-attachments/assets/7a6b9644-649b-4572-84e8-0a21530cde45" width="45%" height="250px" />
 </p>
 <p align="center">
-  <img class="glow-img" src="https://github.com/user-attachments/assets/49d0623c-126a-42f6-b1b5-b834510792ed" width="45%" height="250px" />
-  <img class="glow-img" src="https://github.com/user-attachments/assets/b5b7e9e8-9d7c-4ebf-9f68-5a335b356f5b" width="45%" height="250px" />
+  <img src="https://github.com/user-attachments/assets/49d0623c-126a-42f6-b1b5-b834510792ed" width="45%" height="250px" />
+  <img src="https://github.com/user-attachments/assets/b5b7e9e8-9d7c-4ebf-9f68-5a335b356f5b" width="45%" height="250px" />
 </p>
 
 ---
@@ -49,4 +40,5 @@ A stylish gaming-themed website with **Glassmorphism UI** and **smooth micro-ani
 git clone https://github.com/Abinash-G/gaming-site.git
 cd gaming-site
 open index.html    # or run using any local server
+
 
