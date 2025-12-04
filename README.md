@@ -3,7 +3,7 @@
 A stylish gaming-themed website with **Glassmorphism UI** and **smooth micro-animations**, giving a premium futuristic feel — optimized for both desktop & mobile users.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bd77af38-264d-4feb-b502-0bc762632c97" width="45%" height="250px" />
+  <img src="https://github.com/user-attachments/assets/4c1e8a47-e86a-45f5-a5b6-f06934524066" width="45%" height="250px" />
   <img src="https://github.com/user-attachments/assets/7a6b9644-649b-4572-84e8-0a21530cde45" width="45%" height="250px" />
 </p>
 <p align="center">
@@ -40,5 +40,6 @@ A stylish gaming-themed website with **Glassmorphism UI** and **smooth micro-ani
 git clone https://github.com/Abinash-G/gaming-site.git
 cd gaming-site
 open index.html    # or run using any local server
+
 
 
