@@ -287,7 +287,7 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     color: #b0b0b0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 15px;
+    margin: 1rem;
     margin-top: auto;
 }
 
@@ -593,24 +593,19 @@ body {
         justify-content: flex-start;
         height: 100%;
         padding: 0;
-        margin: 0;
+        margin: 0 1rem;
         line-height: 1;
     }
 
     /* ensure icon vertically centered */
     .navbar-brand i {
-        margin: 0;
         display: block;
         align-self: center;
-        font-size: 1.4rem;
-        position: absolute;
-        left: 8vw;
+        font-size: 1.75rem;
     }
 
     /* completely hide animated brand text on mobile and disable animations */
-    .brand-text,
-    .navbar-brand .brand-text,
-    #footer-logo .brand-text {
+    .navbar-brand .brand-text {
         display: none !important;
         opacity: 0 !important;
         max-width: 0 !important;
@@ -691,11 +686,11 @@ body {
         top: 80px !important;
         left: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.35) !important;
+        background-color: rgba(0, 0, 0, 0.5) !important;
         /* must be non-transparent */
-        -webkit-backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
         /* iOS/Safari */
-        backdrop-filter: blur(8px) !important;
+        backdrop-filter: blur(12px) !important;
         /* Chrome/etc */
         -webkit-background-clip: padding-box !important;
         background-clip: padding-box !important;
@@ -727,8 +722,101 @@ body {
     #video-background,
     #video-background-mobile {
         transform: none !important;
-        -webkit-transform: none !important;
-        backface-visibility: hidden !important;
-        will-change: opacity !important;
     }
+
+    /* Custom Mobile Scrollbar (Minimal Blue) */
+    ::-webkit-scrollbar {
+        width: 4px;
+        background: rgb(0, 27, 65) !important;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #008cff;
+        /* Bright Blue */
+        border-radius: 10px;
+    }
+
+    /* Fixed Glass Dropdown for Mobile */
+    #navbarTogglerDemo03 .glass-dropdown {
+        width: 100% !important;
+        margin-top: 10px !important;
+        position: static !important;
+        transform: translateZ(0) !important;
+        background: rgba(0, 0, 0, 0.25) !important;
+        /* Darker background for contrast */
+        -webkit-backdrop-filter: blur(20px) !important;
+        backdrop-filter: blur(20px) !important;
+        border-radius: 12px;
+        padding: 1rem !important;
+        /* increased padding as requested */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 50000 !important;
+    }
+
+    /* Target items inside glass dropdown for mobile size adjustments */
+    .glass-dropdown .glass-item {
+        display: flex !important;
+        /* Ensure flex is active */
+        flex-direction: column !important;
+        justify-content: center !important;
+        /* Center vertically */
+        align-items: center !important;
+        /* Center horizontally */
+        text-align: center !important;
+        padding: 12px 10px !important;
+        margin-bottom: 8px;
+        background: rgba(255, 255, 255, 0.05);
+        /* Slight highlight */
+        border-radius: 8px;
+    }
+
+    .glass-dropdown .glass-item .title {
+        font-size: 0.9rem !important;
+        /* Smaller Title */
+        margin-top: 5px;
+    }
+
+    .glass-dropdown .glass-item .subtitle {
+        font-size: 0.7rem !important;
+        /* Smaller Subtitle */
+        opacity: 0.7;
+    }
+
+    .glass-dropdown .glass-item .main-icon {
+        font-size: 1.4rem !important;
+        /* Smaller Icon */
+        margin-bottom: 5px;
+    }
+
+    .glass-dropdown .contact-item {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .glass-dropdown .contact-item .d-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .glass-dropdown .contact-item .text-start {
+        text-align: center !important;
+    }
+
+    .glass-dropdown .social-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+.hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
 }

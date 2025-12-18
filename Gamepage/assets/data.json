@@ -1264,5 +1264,1121 @@
     "publisher": "PlayStation Publishing",
     "release": "2024-02-08",
     "genre": "Action, Shooter, Co-op"
+  },
+  "valorant": {
+    "slug": "valorant",
+    "title": "Valorant",
+    "youtube_id": "e_E9W2vsRbQ",
+    "description": "A 5v5 character-based tactical shooter where precise gunplay meets unique agent abilities.",
+    "about": "VALORANT is a competitive tactical shooter from Riot Games. Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities.",
+    "screenshots": [
+      "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7a7606ee3767980b/5ebc402170364c1b012586ed/V_AGENTS_587x10_NEON.jpg",
+      "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6f979144365313d1/5f340456100806444fd3d077/MAPS_920x500_ASCENT.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7/8/10 64-bit",
+        "cpu": "Intel Core 2 Duo E8400 / AMD Athlon 200GE",
+        "gpu": "Intel HD 4000 / Radeon R5 200",
+        "memory": "4 GB RAM",
+        "storage": "20 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11 64-bit",
+        "cpu": "Intel i3-4150 / AMD Ryzen 3 1200",
+        "gpu": "NVIDIA GT 730 / AMD Radeon R7 240",
+        "memory": "8 GB RAM",
+        "storage": "20 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/16.png",
+      "title": "16+",
+      "description": "Violence"
+    },
+    "developer": "Riot Games",
+    "publisher": "Riot Games",
+    "release": "2020-06-02",
+    "genre": "Shooter, Tactical"
+  },
+  "counterstrike-2": {
+    "slug": "counterstrike-2",
+    "title": "Counter-Strike 2",
+    "youtube_id": "n6LpqB-n4_Y",
+    "description": "The next installment of the world's premier tactical shooter, built on the Source 2 engine.",
+    "about": "Counter-Strike 2 is the largest technical leap forward in Counter-Strike’s history, ensuring new features and updates for years to come. All of your items from CS:GO are coming with you.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/730/ss_891e9f138e64c1e097f4749f7e8e74d79bdafa16.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/730/ss_d60e16422fc1605181e0fedee3e2cfc1e02c750e.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i5-2500K / AMD FX-6300",
+        "gpu": "NVIDIA GTX 660 / AMD HD 7850",
+        "memory": "8 GB RAM",
+        "storage": "85 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11 64-bit",
+        "cpu": "Intel Core i7-4770K / AMD Ryzen 5 1500X",
+        "gpu": "NVIDIA GTX 1060 / AMD RX 580",
+        "memory": "16 GB RAM",
+        "storage": "85 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
+      "title": "18+",
+      "description": "Violence, Strong Language"
+    },
+    "developer": "Valve",
+    "publisher": "Valve",
+    "release": "2023-09-27",
+    "genre": "Shooter, Tactical"
+  },
+  "dota-2": {
+    "slug": "dota-2",
+    "title": "Dota 2",
+    "youtube_id": "-cSFPIwMEq4",
+    "description": "The most-played game on Steam, a deep and complex MOBA with a massive competitive scene.",
+    "about": "Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes. And no matter if it's their 10th hour of play or 1,000th, there's always something new to discover.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/570/ss_8b29f7e1ce9a8b9313dc3eb50dbe76a4cf94eef9.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/570/ss_2c265df38c3d2d393d74ee8e74d79bdafa16b143.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 or newer",
+        "cpu": "Dual core from Intel or AMD at 2.8 GHz",
+        "gpu": "NVIDIA GeForce 8600/9600GT / ATI/AMD Radeon HD2600/3600",
+        "memory": "4 GB RAM",
+        "storage": "15 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel i5-4460 / AMD Ryzen 3 1200",
+        "gpu": "NVIDIA GTX 960 / AMD R9 280",
+        "memory": "8 GB RAM",
+        "storage": "15 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Fantasy Violence"
+    },
+    "developer": "Valve",
+    "publisher": "Valve",
+    "release": "2013-07-09",
+    "genre": "MOBA, Strategy"
+  },
+  "overwatch-2": {
+    "slug": "overwatch-2",
+    "title": "Overwatch 2",
+    "youtube_id": "GKXS40Atqd8",
+    "description": "A team-based hero shooter set in an optimistic future, featuring evolving 5v5 combat.",
+    "about": "Overwatch 2 is a free-to-play, team-based action game set in the optimistic future, where every match is the ultimate 5v5 battlefield brawl.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/2357570/ss_454d47a032e0cd8477228bf97088abee9f31fa8c.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/2357570/ss_a1c462dcd4cc30ffae26e6c1d80bf07aba8dd699.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i3 / AMD Phenom X3 8650",
+        "gpu": "NVIDIA GeForce GTX 600 series / AMD Radeon HD 7000 series",
+        "memory": "6 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i7 / AMD Ryzen 5",
+        "gpu": "NVIDIA GeForce GTX 1060 / AMD Radeon R9 380",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Fantasy Violence"
+    },
+    "developer": "Blizzard Entertainment",
+    "publisher": "Blizzard Entertainment",
+    "release": "2022-10-04",
+    "genre": "Shooter, Action"
+  },
+  "warframe": {
+    "slug": "warframe",
+    "title": "Warframe",
+    "youtube_id": "S6_Ssh8-2b8",
+    "description": "Embody a powerful techno-organic warrior and slice through hordes of enemies in this fast-paced cooperative shooter.",
+    "about": "Warframe is a cooperative free-to-play third person online action game set in an evolving sci-fi world. Join your friends in player-vs-enemy raids across the solar system and master the power of the Warframes.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/230410/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/230410/ss_50bead02a0e620b05e560c3b1f84b7c2e6ae3739.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 64-bit",
+        "cpu": "Intel Core i5-6600K / AMD FX-6300",
+        "gpu": "NVIDIA GTX 760 / AMD R9 280",
+        "memory": "4 GB RAM",
+        "storage": "35 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i7-2700K / AMD Ryzen 5 2600",
+        "gpu": "NVIDIA GTX 970 / AMD RX 570",
+        "memory": "8 GB RAM",
+        "storage": "35 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
+      "title": "18+",
+      "description": "Violence, Strong Language"
+    },
+    "developer": "Digital Extremes",
+    "publisher": "Digital Extremes",
+    "release": "2013-03-25",
+    "genre": "Action, Shooter"
+  },
+  "destiny-2": {
+    "slug": "destiny-2",
+    "title": "Destiny 2",
+    "youtube_id": "hdWkpbPTpmE",
+    "description": "Dive into the world of Destiny 2 to explore the mysteries of the solar system and experience responsive first-person shooter combat.",
+    "about": "Destiny 2 is an action MMO with a single evolving world that you and your friends can join anytime, anywhere, absolutely free.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_43a4caaeccf74bfebf07efde396ed1aaba38f868.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_68b7e18e2f212cb3f77cb93e605edfee5e5ce97e.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 / 8.1 / 10 64-bit",
+        "cpu": "Intel Core i3-3250 / AMD FX-4350",
+        "gpu": "NVIDIA GeForce GTX 660 / AMD Radeon HD 7850",
+        "memory": "6 GB RAM",
+        "storage": "105 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i5-2400 / AMD Ryzen 5 1600",
+        "gpu": "NVIDIA GeForce GTX 970 / AMD Radeon R9 390",
+        "memory": "8 GB RAM",
+        "storage": "105 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/16.png",
+      "title": "16+",
+      "description": "Violence"
+    },
+    "developer": "Bungie",
+    "publisher": "Bungie",
+    "release": "2017-09-06",
+    "genre": "Shooter, Action, RPG"
+  },
+  "hades": {
+    "slug": "hades",
+    "title": "Hades",
+    "youtube_id": "91t0S_atxtE",
+    "description": "Defy the god of the dead as you hack and slash out of the Underworld in this rogue-like dungeon crawler.",
+    "about": "Hades is a god-like rogue-like dungeon crawler that combines the best aspects of Supergiant's critically acclaimed titles, including the fast-paced action of Bastion, the rich atmosphere and depth of Transistor, and the character-driven storytelling of Pyre.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1145360/ss_3d45c3f8cacdd1b85bbff1dd6ec1345ca9015ae0.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/1145360/ss_2dc586fe63ff0ce53c13ea582d9f366c9271b4b8.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 SP1",
+        "cpu": "Dual Core 2.4 GHz",
+        "gpu": "1GB VRAM / DirectX 10+ support",
+        "memory": "4 GB RAM",
+        "storage": "15 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "Quad Core 3.0 GHz+",
+        "gpu": "2GB VRAM / DirectX 10+ support",
+        "memory": "8 GB RAM",
+        "storage": "15 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Violence, Mild Language"
+    },
+    "developer": "Supergiant Games",
+    "publisher": "Supergiant Games",
+    "release": "2020-09-17",
+    "genre": "Action, Rogue-like"
+  },
+  "rainbow-six-siege": {
+    "slug": "rainbow-six-siege",
+    "title": "Tom Clancy's Rainbow Six Siege",
+    "youtube_id": "6wlvYh0h63k",
+    "description": "Master the art of destruction and gadgetry in Tom Clancy’s Rainbow Six Siege.",
+    "about": "Face intense close-quarters combat, high lethality, tactical decision making, team play and explosive action within every moment. Experience a new era of fierce fire fights and expert strategy born from the rich legacy of past Tom Clancy's Rainbow Six games.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/359550/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/359550/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7, Windows 8.1, Windows 10 64-bit",
+        "cpu": "Intel Core i3 530 / AMD Phenom II X4 945",
+        "gpu": "NVIDIA GeForce GTX 460 / AMD Radeon HD 5870",
+        "memory": "6 GB RAM",
+        "storage": "61 GB"
+      },
+      "recommended": {
+        "os": "Windows 7, Windows 8.1, Windows 10 64-bit",
+        "cpu": "Intel Core i5-2500K / AMD FX-8120",
+        "gpu": "NVIDIA GeForce GTX 670 / AMD Radeon HD 7970",
+        "memory": "8 GB RAM",
+        "storage": "61 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
+      "title": "18+",
+      "description": "Violence, Strong Language"
+    },
+    "developer": "Ubisoft Montreal",
+    "publisher": "Ubisoft",
+    "release": "2015-12-01",
+    "genre": "Shooter, Tactical"
+  },
+  "sekiro-shadows-die-twice": {
+    "slug": "sekiro-shadows-die-twice",
+    "title": "Sekiro: Shadows Die Twice",
+    "youtube_id": "rXMX4YJ7Lks",
+    "description": "Carve your own clever path to vengeance in the award-winning adventure from developer FromSoftware.",
+    "about": "In Sekiro: Shadows Die Twice you are the 'one-armed wolf', a disgraced and disfigured warrior rescued from the brink of death. Bound to protect a young lord who is the descendant of an ancient bloodline, you become the target of many vicious enemies.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_0eb7cba8c207d45b4bbf91ce5888b8c2a4f7f113.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/814380/ss_b2eabbe6ff1571318dd43259c59e86cdc006e645.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 64-bit",
+        "cpu": "Intel Core i3-2100 / AMD FX-6300",
+        "gpu": "NVIDIA GeForce GTX 760 / AMD Radeon HD 7950",
+        "memory": "4 GB RAM",
+        "storage": "25 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i5-2500K / AMD Ryzen 5 1400",
+        "gpu": "NVIDIA GeForce GTX 970 / AMD Radeon RX 570",
+        "memory": "8 GB RAM",
+        "storage": "25 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
+      "title": "18+",
+      "description": "Violence, Blood and Gore"
+    },
+    "developer": "FromSoftware",
+    "publisher": "Activision",
+    "release": "2019-03-22",
+    "genre": "Action, Adventure"
+  },
+  "stardew-valley": {
+    "slug": "stardew-valley",
+    "title": "Stardew Valley",
+    "youtube_id": "ot7uXNQskis",
+    "description": "You've inherited your grandfather's old farm plot in Stardew Valley. Can you learn to live off the land and turn these overgrown fields into a thriving home?",
+    "about": "Stardew Valley is an open-ended country-life RPG! You’ve inherited your grandfather’s old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/413150/ss_1d792319ba0b45fdd0dfca6f67867ce54b492236.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/413150/ss_8b3f4c5f1c5b5a875abc50f3717b9f3ceb69c2b6.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 or greater",
+        "cpu": "2 GHz",
+        "gpu": "256 mb video memory, shader model 3.0+",
+        "memory": "2 GB RAM",
+        "storage": "500 MB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "2 GHz+",
+        "gpu": "512 mb video memory",
+        "memory": "4 GB RAM",
+        "storage": "500 MB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/3.png",
+      "title": "3+",
+      "description": "Simulation"
+    },
+    "developer": "ConcernedApe",
+    "publisher": "ConcernedApe",
+    "release": "2016-02-26",
+    "genre": "Social, Simulation, RPG"
+  },
+  "palworld": {
+    "slug": "palworld",
+    "title": "Palworld",
+    "youtube_id": "T0m9D3v5oU4",
+    "description": "A survival, crafting, and creature-collection game set in an open world with quirky creatures called 'Pals'.",
+    "about": "Fight, farm, build and work alongside mysterious creatures called 'Pals' in this completely new multi-player, open world survival and crafting game!",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1623730/ss_4c5e6357b347a55ed929833ba793b57a79d2.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/1623730/ss_856e33e755a0b9a785c645d116036516ea08812b.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10 64-bit",
+        "cpu": "i5-3570K 3.4 GHz 4 Core",
+        "gpu": "GeForce GTX 1050 (2GB)",
+        "memory": "16 GB RAM",
+        "storage": "40 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "i9-9900K 3.6 GHz 8 Core",
+        "gpu": "GeForce RTX 2070",
+        "memory": "32 GB RAM",
+        "storage": "40 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Violence"
+    },
+    "developer": "Pocketpair",
+    "publisher": "Pocketpair",
+    "release": "2024-01-19",
+    "genre": "Survival, RPG"
+  },
+  "silent-hill-2": {
+    "slug": "silent-hill-2",
+    "title": "Silent Hill 2 (Remake)",
+    "youtube_id": "mXf7Vv6A3vY",
+    "description": "Experience a master-class in psychological survival horror—lauded as the best in the series—on the latest hardware.",
+    "about": "Having received a letter from his deceased wife, James returns to where they made so many memories, in the hope of seeing her one last time: Silent Hill.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/2124490/ss_d1a893ec6357b347a55ed929833ba793b57a79d2.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/2124490/ss_856e33e755a0b9a785c645d116036516ea08812b.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i5-8400 / AMD Ryzen 3 3300X",
+        "gpu": "AMD Radeon RX 5700 / NVIDIA GeForce GTX 1080",
+        "memory": "12 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 11 64-bit",
+        "cpu": "Intel Core i7-8700K / AMD Ryzen 5 3600X",
+        "gpu": "NVIDIA GeForce RTX 2080 / AMD Radeon RX 6800 XT",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
+      "title": "18+",
+      "description": "Violence, Bad Language"
+    },
+    "developer": "Bloober Team",
+    "publisher": "KONAMI",
+    "release": "2024-10-08",
+    "genre": "Horror, Adventure"
+  },
+  "metaphor-refantazio": {
+    "slug": "metaphor-refantazio",
+    "title": "Metaphor: ReFantazio",
+    "youtube_id": "rS_3Yc9r1eA",
+    "description": "A grand fantasy RPG from the creative minds behind Persona 3, 4, and 5.",
+    "about": "Metaphor: ReFantazio is an all-new fantasy RPG from the creative minds behind Persona. Players will forge their own destiny and face their fears to become the leader the kingdom needs.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/2679460/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/2679460/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5-3470 / AMD FX-6300",
+        "gpu": "NVIDIA GeForce GTX 750 Ti / AMD Radeon R7 265",
+        "memory": "8 GB RAM",
+        "storage": "93 GB SSD"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7-6700 / AMD Ryzen 5 2600",
+        "gpu": "NVIDIA GeForce GTX 980 / AMD Radeon RX 580",
+        "memory": "16 GB RAM",
+        "storage": "93 GB SSD"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Fantasy Violence"
+    },
+    "developer": "Studio Zero",
+    "publisher": "ATLUS",
+    "release": "2024-10-11",
+    "genre": "RPG, Adventure"
+  },
+  "star-wars-jedi-survivor": {
+    "slug": "star-wars-jedi-survivor",
+    "title": "Star Wars Jedi: Survivor",
+    "youtube_id": "VRaobDJjiec",
+    "description": "Continuing the story of Cal Kestis in a grand-scale adventure across the galaxy.",
+    "about": "The story of Cal Kestis continues in STAR WARS Jedi: Survivor™, a third-person, galaxy-spanning, action-adventure game from Respawn Entertainment, developed in collaboration with Lucasfilm Games.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1774580/ss_d1a893ec6357b347a55ed929833ba793b57a79d2.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/1774580/ss_856e33e755a0b9a785c645d116036516ea08812b.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i7-7700 / AMD Ryzen 5 1400",
+        "gpu": "NVIDIA GeForce GTX 1070 / AMD Radeon RX 580",
+        "memory": "8 GB RAM",
+        "storage": "155 GB SSD"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i5 11600K / AMD Ryzen 5 5600X",
+        "gpu": "NVIDIA RTX 2070 / AMD RX 6700 XT",
+        "memory": "16 GB RAM",
+        "storage": "155 GB SSD"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Fantasy Violence"
+    },
+    "developer": "Respawn Entertainment",
+    "publisher": "Electronic Arts",
+    "release": "2023-04-28",
+    "genre": "Action, Adventure"
+  },
+  "resident-evil-2-remake": {
+    "slug": "resident-evil-2-remake",
+    "title": "Resident Evil 2 (Remake)",
+    "youtube_id": "xtxJtQA6W7w",
+    "description": "A masterpiece reborn, Resident Evil 2 returns with deeper immersion and modern visuals.",
+    "about": "The genre-defining masterpiece Resident Evil 2 returns, completely rebuilt from the ground up for a deeper narrative experience. Using Capcom’s proprietary RE Engine, Resident Evil 2 offers a fresh take on the classic survival horror saga with breathtakingly realistic visuals.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/883710/ss_3d45c3f8cacdd1b85bbff1dd6ec1345ca9015ae0.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/883710/ss_2dc586fe63ff0ce53c13ea582d9f366c9271b4b8.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i5-4460 / AMD FX-6300",
+        "gpu": "NVIDIA GeForce GTX 760 / AMD Radeon R7 260x",
+        "memory": "8 GB RAM",
+        "storage": "26 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i7-3770 / AMD FX-9590",
+        "gpu": "NVIDIA GeForce GTX 1060 / AMD Radeon RX 480",
+        "memory": "8 GB RAM",
+        "storage": "26 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
+      "title": "18+",
+      "description": "Violence, Blood and Gore"
+    },
+    "developer": "Capcom",
+    "publisher": "Capcom",
+    "release": "2019-01-25",
+    "genre": "Horror, Action"
+  },
+  "paladins": {
+    "slug": "paladins",
+    "title": "Paladins",
+    "youtube_id": "Iclp8s4N3hU",
+    "description": "Join 50+ million players in Paladins, the free-to-play fantasy team-based shooter.",
+    "about": "Wield guns and magic as a legendary Champion of the Realm, customizing your core set of abilities to play exactly how you want to play.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/444090/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/444090/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 64-bit",
+        "cpu": "Core 2 Duo 2.4 GHz / Athlon X2 2.7 GHz",
+        "gpu": "NVIDIA GeForce 8800 GT",
+        "memory": "4 GB RAM",
+        "storage": "30 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i5-750 / AMD Phenom II X4 965",
+        "gpu": "NVIDIA GeForce GTX 660",
+        "memory": "6 GB RAM",
+        "storage": "30 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Fantasy Violence"
+    },
+    "developer": "Evil Mojo Games",
+    "publisher": "Hi-Rez Studios",
+    "release": "2018-05-08",
+    "genre": "Shooter, Action"
+  },
+  "smite": {
+    "slug": "smite",
+    "title": "SMITE",
+    "youtube_id": "P_6be-iY_sM",
+    "description": "Play for free and join over 35 million players in SMITE, the world’s most popular action MOBA.",
+    "about": "Enter the Battleground of the Gods! SMITE is a free-to-play third-person Action MOBA, featuring a diverse roster of 100+ Gods from various pantheons.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/386360/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/386360/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 64-bit",
+        "cpu": "Core 2 Duo 2.4 GHz / Athlon X2 2.7 GHz",
+        "gpu": "NVIDIA GeForce 8800 GT",
+        "memory": "4 GB RAM",
+        "storage": "30 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i5-750 / AMD Phenom II X4 965",
+        "gpu": "NVIDIA GeForce GTX 660",
+        "memory": "6 GB RAM",
+        "storage": "30 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Fantasy Violence"
+    },
+    "developer": "Titan Forge Games",
+    "publisher": "Hi-Rez Studios",
+    "release": "2014-03-25",
+    "genre": "MOBA, Action"
+  },
+  "hearthstone": {
+    "slug": "hearthstone",
+    "title": "Hearthstone",
+    "youtube_id": "QdXl39vhvwY",
+    "description": "Deceptively simple. Insanely fun. Collect cards and battle other players in this fast-paced strategy card game.",
+    "about": "Hearthstone is a free-to-play online digital collectible card game developed and published by Blizzard Entertainment.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/2104760/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/2104760/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 / 8 / 10",
+        "cpu": "Intel Pentium D / AMD Athlon 64 X2",
+        "gpu": "NVIDIA GeForce 6800 / ATI Radeon X1600 Pro",
+        "memory": "3 GB RAM",
+        "storage": "3 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "Intel Core 2 Duo / AMD Athlon 64 X2",
+        "gpu": "NVIDIA GeForce 8800 GT / ATI Radeon HD 2600 Pro",
+        "memory": "4 GB RAM",
+        "storage": "3 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/7.png",
+      "title": "7+",
+      "description": "Fantasy Violence"
+    },
+    "developer": "Blizzard Entertainment",
+    "publisher": "Blizzard Entertainment",
+    "release": "2014-03-11",
+    "genre": "Card, Strategy"
+  },
+  "lost-ark": {
+    "slug": "lost-ark",
+    "title": "Lost Ark",
+    "youtube_id": "4S_Ssh8-2b8",
+    "description": "Embark on an odyssey for the Lost Ark in a vast, vibrant world: explore new lands, seek out lost treasures, and test yourself in thrilling action combat.",
+    "about": "Lost Ark is a massive multiplayer online action role-playing game (MMOARPG). Explore a huge world with countless quests and dungeons to discover.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1599340/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/1599340/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel i3 / AMD Ryzen 3",
+        "gpu": "NVIDIA GeForce GTX 460 / AMD Radeon HD 6850",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel i5 / AMD Ryzen 5",
+        "gpu": "NVIDIA GeForce GTX 1050",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
+      "title": "18+",
+      "description": "Violence, Strong Language"
+    },
+    "developer": "Smilegate RPG",
+    "publisher": "Amazon Games",
+    "release": "2022-02-11",
+    "genre": "Action, RPG, MMO"
+  },
+  "rocket-league": {
+    "slug": "rocket-league",
+    "title": "Rocket League",
+    "youtube_id": "SgSX3gOrj60",
+    "description": "Rocket League is a high-powered hybrid of arcade-style soccer and vehicular mayhem with easy-to-understand controls and fluid, physics-driven competition.",
+    "about": "Take to the pitch for a fully-featured offline season mode, multiple game types, casual and competitive online matches, and special 'Mutators' that let you change the rules entirely.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/252950/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/252950/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 64-bit",
+        "cpu": "2.4 GHz Dual core",
+        "gpu": "NVIDIA GTX 260 / ATI 4850",
+        "memory": "4 GB RAM",
+        "storage": "20 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "3.0+ GHz Quad core",
+        "gpu": "NVIDIA GTX 660 or better / ATI 7950 or better",
+        "memory": "8 GB RAM",
+        "storage": "20 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/3.png",
+      "title": "3+",
+      "description": "Racing, Sports"
+    },
+    "developer": "Psyonix",
+    "publisher": "Psyonix",
+    "release": "2015-07-07",
+    "genre": "Action, Sports"
+  },
+  "fall-guys": {
+    "slug": "fall-guys",
+    "title": "Fall Guys",
+    "youtube_id": "z6U9SId8S-8",
+    "description": "Fall Guys is a free, cross-platform, massively multiplayer, party royale game where you and your fellow contestants compete through escalating rounds of absurd obstacle course chaos.",
+    "about": "You’re invited to dive and dodge your way to victory in the pantheon of clumsy! Rookie or pro? Solo or party? Fall Guys delivers ever-evolving, high-concentrated hilarity and fun.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1097150/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/1097150/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i5 / AMD equivalent",
+        "gpu": "NVIDIA GTX 660 / AMD Radeon HD 7950",
+        "memory": "8 GB RAM",
+        "storage": "2 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i5 / AMD equivalent",
+        "gpu": "NVIDIA GTX 660 / AMD Radeon HD 7950",
+        "memory": "8 GB RAM",
+        "storage": "2 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/3.png",
+      "title": "3+",
+      "description": "Comic Mischief"
+    },
+    "developer": "Mediatonic",
+    "publisher": "Epic Games",
+    "release": "2020-08-04",
+    "genre": "Action, Party, Indie"
+  },
+  "the-sims-4": {
+    "slug": "the-sims-4",
+    "title": "The Sims 4",
+    "youtube_id": "z00mK3Pxc8w",
+    "description": "Unleash your imagination and create a unique world of Sims that’s an expression of you! Explore and customize every detail from Sims to homes, and much more.",
+    "about": "The Sims 4 is the ultimate life simulation game—create unique characters, build dream homes, and explore vibrant worlds.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1222670/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/1222670/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i3-3220 / AMD Phenom II X4 965",
+        "gpu": "NVIDIA GTX 650 / AMD Radeon HD 7750",
+        "memory": "4 GB RAM",
+        "storage": "26 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i5 / AMD Ryzen 5",
+        "gpu": "NVIDIA GTX 960 / AMD Radeon R9 270",
+        "memory": "8 GB RAM",
+        "storage": "26 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Sexual Content, Violence"
+    },
+    "developer": "Maxis",
+    "publisher": "Electronic Arts",
+    "release": "2014-09-02",
+    "genre": "Simulation"
+  },
+  "pubg-battlegrounds": {
+    "slug": "pubg-battlegrounds",
+    "title": "PUBG: BATTLEGROUNDS",
+    "youtube_id": "4rG9X0G2K0M",
+    "description": "Land, loot, and outwit your opponents to become the last player standing in a thrilling game experience full of unexpected, adrenaline-pumping moments.",
+    "about": "PUBG: BATTLEGROUNDS is a battle royale shooter that pits 100 players against each other in a struggle for survival.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/578080/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/578080/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7, Windows 8.1, Windows 10 64-bit",
+        "cpu": "Intel i5-4430 / AMD FX-6300",
+        "gpu": "NVIDIA GeForce GTX 960 2GB / AMD Radeon R7 370 2GB",
+        "memory": "8 GB RAM",
+        "storage": "40 GB"
+      },
+      "recommended": {
+        "os": "Windows 7, Windows 8.1, Windows 10 64-bit",
+        "cpu": "Intel i5-6600K / AMD Ryzen 5 1600",
+        "gpu": "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+        "memory": "16 GB RAM",
+        "storage": "40 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/16.png",
+      "title": "16+",
+      "description": "Violence"
+    },
+    "developer": "KRAFTON, Inc.",
+    "publisher": "KRAFTON, Inc.",
+    "release": "2017-12-21",
+    "genre": "Shooter, Battle-Royale"
+  },
+  "eve-online": {
+    "slug": "eve-online",
+    "title": "EVE Online",
+    "youtube_id": "A_9tIs_182k",
+    "description": "EVE Online is a community-driven spaceship MMO where players can play free, choosing their own path from countless options.",
+    "about": "Experience space exploration, immense PvP and PvE battles, mining, industry and a sophisticated player economy in an ever-expanding sandbox.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/8500/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/8500/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 64-bit",
+        "cpu": "Intel Dual Core @ 2.0 GHz / AMD Dual Core @ 2.0 GHz",
+        "gpu": "AMD Radeon 2600 XT / NVIDIA GeForce 8600 GTS",
+        "memory": "4 GB RAM",
+        "storage": "23 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel i7-7700 / AMD Ryzen 7 1700",
+        "gpu": "NVIDIA GeForce GTX 1060 / AMD Radeon RX 580",
+        "memory": "16 GB RAM",
+        "storage": "23 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Violence"
+    },
+    "developer": "CCP",
+    "publisher": "CCP",
+    "release": "2003-05-06",
+    "genre": "MMO, RPG, Strategy"
+  },
+  "war-thunder": {
+    "slug": "war-thunder",
+    "title": "War Thunder",
+    "youtube_id": "0-J5Vg0SxLc",
+    "description": "War Thunder is the most comprehensive free-to-play, cross-platform, MMO military game dedicated to aviation, armoured vehicles, and naval craft from WWII and the Cold War.",
+    "about": "Join now and take part in major battles on land, in the air, and at sea, fighting with millions of players from all over the world in an ever-evolving environment.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/236390/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/236390/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7/8/10 64-bit",
+        "cpu": "Dual-Core 2.2 GHz",
+        "gpu": "DirectX 10.1 compliant video card: Intel HD Graphics 4000 / AMD Radeon 4670 / NVIDIA GeForce GT 520",
+        "memory": "4 GB RAM",
+        "storage": "35 GB"
+      },
+      "recommended": {
+        "os": "Windows 7/8/10 64-bit",
+        "cpu": "Intel Core i5 / AMD Ryzen 5",
+        "gpu": "DirectX 11 compliant video card or higher and 2GB VRAM: NVIDIA GeForce GTX 960 / AMD Radeon R9 280",
+        "memory": "8 GB RAM",
+        "storage": "95 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Violence"
+    },
+    "developer": "Gaijin Entertainment",
+    "publisher": "Gaijin Distribution KFT",
+    "release": "2013-08-15",
+    "genre": "Action, Combat, MMO"
+  },
+  "world-of-tanks": {
+    "slug": "world-of-tanks",
+    "title": "World of Tanks",
+    "youtube_id": "r9_N0Y2A8x4",
+    "description": "Jump into the free-to-play team-based shooter with an ever-expanding roster of historical vehicles, stunning graphics, spectacular locales, and orchestral scores.",
+    "about": "Command over 600 machines from the mid-20th century and test your mettle against other players in ultimate tank battles.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1407200/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/1407200/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7/8/10",
+        "cpu": "Intel Pentium E2180 / AMD Athlon 64 X2 4200+",
+        "gpu": "NVIDIA GeForce 8600 / ATI Radeon HD 4550",
+        "memory": "2 GB RAM",
+        "storage": "40 GB"
+      },
+      "recommended": {
+        "os": "Windows 7/8/10 64-bit",
+        "cpu": "Intel Core i5-3330 / AMD FX-6330",
+        "gpu": "NVIDIA GeForce GTX 660 / AMD Radeon HD 7850",
+        "memory": "4 GB RAM",
+        "storage": "40 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/7.png",
+      "title": "7+",
+      "description": "Mild Violence"
+    },
+    "developer": "Wargaming Group Limited",
+    "publisher": "Wargaming Group Limited",
+    "release": "2010-08-12",
+    "genre": "Action, Strategy, MMO"
+  },
+  "world-of-warships": {
+    "slug": "world-of-warships",
+    "title": "World of Warships",
+    "youtube_id": "78xS9x8z8U8",
+    "description": "Experience epic, free-to-play naval combat when you take command of one of over 400 historical vessels.",
+    "about": "World of Warships is the ultimate free-to-play naval action game, providing equal access to all gameplay features.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/552990/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/552990/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 SP1 / 8.1 / 10",
+        "cpu": "Intel Core i3-2100 / AMD Athlon II X2 245",
+        "gpu": "NVIDIA GeForce GT 440 / AMD Radeon HD 6670 / Intel HD 4000",
+        "memory": "4 GB RAM",
+        "storage": "60 GB"
+      },
+      "recommended": {
+        "os": "Windows 7 SP1 / 8.1 / 10 64-bit",
+        "cpu": "Intel Core i5-2500K / AMD FX-6300",
+        "gpu": "NVIDIA GeForce GTX 660 / AMD Radeon R9 270",
+        "memory": "6 GB RAM",
+        "storage": "60 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/7.png",
+      "title": "7+",
+      "description": "Mild Violence"
+    },
+    "developer": "Wargaming Group Limited",
+    "publisher": "Wargaming Group Limited",
+    "release": "2015-09-17",
+    "genre": "Action, Simulation, MMO"
+  },
+  "path-of-exile": {
+    "slug": "path-of-exile",
+    "title": "Path of Exile",
+    "youtube_id": "X_wX9p9vRj8",
+    "description": "You are an Exile, struggling to survive on the dark continent of Wraeclast, as you fight to earn power that will allow you to take your revenge against those who wronged you.",
+    "about": "Path of Exile is an online Action RPG set in the dark fantasy world of Wraeclast. It is designed around a deep character customization system and core item economy.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/238960/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/238960/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 SP1/Windows 8",
+        "cpu": "x64-compatible quad-core 2.6GHz or better",
+        "gpu": "NVIDIA GeForce GTX 650 Ti / ATI Radeon HD 7850",
+        "memory": "8 GB RAM",
+        "storage": "40 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "x64-compatible quad-core 3.2GHz or better",
+        "gpu": "NVIDIA GeForce GTX 1050 Ti / ATI Radeon RX 560",
+        "memory": "16 GB RAM",
+        "storage": "40 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
+      "title": "18+",
+      "description": "Violence, Blood and Gore"
+    },
+    "developer": "Grinding Gear Games",
+    "publisher": "Grinding Gear Games",
+    "release": "2013-10-23",
+    "genre": "RPG, Action, Indie"
+  },
+  "no-mans-sky": {
+    "slug": "no-mans-sky",
+    "title": "No Man's Sky",
+    "youtube_id": "nLtmEjqzg7M",
+    "description": "Inspired by the adventure and imagination that we love from classic science-fiction, No Man's Sky presents you with a galaxy to explore, filled with unique planets and lifeforms, and constant danger and action.",
+    "about": "In No Man's Sky, every star is the light of a distant sun, each orbited by planets filled with life, and you can go to any of them you choose.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/275850/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/275850/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7/8.1/10 64-bit",
+        "cpu": "Intel Core i3",
+        "gpu": "NVIDIA GTX 480 / AMD Radeon 7870",
+        "memory": "8 GB RAM",
+        "storage": "10 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA GTX 1060 / AMD RX 480",
+        "memory": "16 GB RAM",
+        "storage": "10 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/7.png",
+      "title": "7+",
+      "description": "Mild Violence"
+    },
+    "developer": "Hello Games",
+    "publisher": "Hello Games",
+    "release": "2016-08-12",
+    "genre": "Action, Adventure, Exploration"
+  },
+  "inside": {
+    "slug": "inside",
+    "title": "INSIDE",
+    "youtube_id": "yDm6PAWdFbo",
+    "description": "Hunted and alone, a boy finds himself drawn into the center of a dark project.",
+    "about": "INSIDE is a 2D puzzle-platformer developed and published by Playdead, similar in style to their previous title Limbo.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/304430/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/304430/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7/8/10 64-bit",
+        "cpu": "Intel Core 2 Quad Q6600 / AMD FX 8120",
+        "gpu": "NVIDIA GT 630 1GB / AMD Radeon HD 6570 1GB",
+        "memory": "4 GB RAM",
+        "storage": "3 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel i5 2300 / AMD FX 6120",
+        "gpu": "NVIDIA GTX 660 2GB / AMD Radeon HD 7850 2GB",
+        "memory": "8 GB RAM",
+        "storage": "3 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
+      "title": "18+",
+      "description": "Violence, Fear"
+    },
+    "developer": "Playdead",
+    "publisher": "Playdead",
+    "release": "2016-07-07",
+    "genre": "Action, Adventure, Indie"
+  },
+  "celeste": {
+    "slug": "celeste",
+    "title": "Celeste",
+    "youtube_id": "70d9irlxiB4",
+    "description": "Help Madeline survive her inner demons on her journey to the top of Celeste Mountain, in this super-tight platformer from the creators of TowerFall.",
+    "about": "A narrative-driven, single-player adventure like mom used to make, with a charming cast of characters and a touching story of self-discovery.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/504230/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/504230/ss_e73b867de0d5926610dfafad9dca7dbb825f9e3a.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7 or newer",
+        "cpu": "Intel Core i3 M380",
+        "gpu": "Intel HD 4000",
+        "memory": "2 GB RAM",
+        "storage": "1.2 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i3 M380",
+        "gpu": "Intel HD 4000",
+        "memory": "4 GB RAM",
+        "storage": "1.2 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/7.png",
+      "title": "7+",
+      "description": "Mild Fantasy Violence"
+    },
+    "developer": "Extremely OK Games, Ltd.",
+    "publisher": "Extremely OK Games, Ltd.",
+    "release": "2018-01-25",
+    "genre": "Action, Indie, Adventure"
   }
 }

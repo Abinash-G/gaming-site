@@ -307,10 +307,21 @@ button:hover {
     -ms-overflow-style: none;
 }
 
-/* This rule is for Chrome, Safari, and new Edge */
-#game-row::-webkit-scrollbar {
-    display: none;
+/* Custom PC Scrollbar (Pink) */
+::-webkit-scrollbar {
+    width: 4px;
 }
+
+::-webkit-scrollbar-track {
+    background: #00324f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff0080;
+    /* Pink */
+    border-radius: 10px;
+}
+
 
 /* Styling for dynamically generated shelf items */
 .shelves-items-row {
@@ -568,12 +579,15 @@ a:hover {
 }
 
 #searchResults {
-    scrollbar-width: none;      /* Firefox */
-    -ms-overflow-style: none;   /* IE/Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
 }
 
 #searchResults::-webkit-scrollbar {
-    display: none;              /* Chrome/Safari */
+    display: none;
+    /* Chrome/Safari */
 }
 
 /* Each search item card */
@@ -772,7 +786,7 @@ a:hover {
     margin-right: 8px;
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
     /* Animation applied here */
-    animation: icon-dance 4s ease-in-out infinite;
+    animation: icon-dance 2s ease-in-out infinite;
     /* Layering for the "behind" effect */
     position: relative;
     z-index: 2;
@@ -783,7 +797,7 @@ a:hover {
     overflow: hidden;
     white-space: nowrap;
     /* Animation applied here */
-    animation: text-reveal 4s ease-in-out infinite;
+    animation: text-reveal 2s ease-in-out infinite;
     /* Layering for the "behind" effect */
     position: relative;
     z-index: 1;
@@ -857,8 +871,9 @@ a:hover {
 }
 
 @media (min-width: 992px) {
+
     /* 1. Target the Row: Force columns to equal height */
-    #page > .row {
+    #page>.row {
         align-items: stretch;
     }
 
@@ -883,7 +898,8 @@ a:hover {
     }
 
     #trending-box {
-        height: 100% !important; /* Fills the height defined by the carousel */
+        height: 100% !important;
+        /* Fills the height defined by the carousel */
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -894,7 +910,8 @@ a:hover {
         flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly; /* Perfect padding calculation */
+        justify-content: space-evenly;
+        /* Perfect padding calculation */
     }
 
     #trending-list hr {
@@ -902,48 +919,73 @@ a:hover {
     }
 
     @keyframes glass-shine {
-    0% { left: -150%; }
-    20% { left: 150%; } /* Sweeps across quickly */
-    100% { left: 150%; } /* Pauses before restarting */
-}
+        0% {
+            left: -150%;
+        }
 
-/* 2. Setup the container */
-#trending-box {
-    position: relative; /* Anchors the shine */
-    overflow: hidden;   /* Keeps shine inside borders */
-}
+        20% {
+            left: 150%;
+        }
 
-/* 3. The Shine Overlay */
-#trending-box::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -150%;
-    width: 80%;
-    height: 100%;
-    /* Subtle white gradient */
-    background: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(255, 255, 255, 0.1) 50%, 
-        transparent 100%
-    );
-    transform: skewX(-25deg);
-    animation: glass-shine 6s infinite ease-in-out;
-    pointer-events: none; /* Ensures you can still click links behind it */
-}
+        /* Sweeps across quickly */
+        100% {
+            left: 150%;
+        }
+
+        /* Pauses before restarting */
+    }
+
+    /* 2. Setup the container */
+    #trending-box {
+        position: relative;
+        /* Anchors the shine */
+        overflow: hidden;
+        /* Keeps shine inside borders */
+    }
+
+    /* 3. The Shine Overlay */
+    #trending-box::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -150%;
+        width: 80%;
+        height: 100%;
+        /* Subtle white gradient */
+        background: linear-gradient(to right,
+                transparent 0%,
+                rgba(255, 255, 255, 0.1) 50%,
+                transparent 100%);
+        transform: skewX(-25deg);
+        animation: glass-shine 6s infinite ease-in-out;
+        pointer-events: none;
+        /* Ensures you can still click links behind it */
+    }
 }
 
 @keyframes glass-shine {
-    0% { left: -150%; }
-    20% { left: 150%; } /* Sweeps across quickly */
-    100% { left: 150%; } /* Pauses before restarting */
+    0% {
+        left: -150%;
+    }
+
+    20% {
+        left: 150%;
+    }
+
+    /* Sweeps across quickly */
+    100% {
+        left: 150%;
+    }
+
+    /* Pauses before restarting */
 }
 
 /* 2. Setup the container */
 #trending-box {
-    position: relative; /* Anchors the shine */
-    overflow: hidden;   /* Keeps shine inside borders */
+    position: relative;
+    /* Anchors the shine */
+    overflow: hidden;
+    /* Keeps shine inside borders */
 }
 
 /* 3. The Shine Overlay */
@@ -955,36 +997,35 @@ a:hover {
     width: 80%;
     height: 100%;
     /* Subtle white gradient */
-    background: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(255, 255, 255, 0.1) 50%, 
-        transparent 100%
-    );
+    background: linear-gradient(to right,
+            transparent 0%,
+            rgba(255, 255, 255, 0.1) 50%,
+            transparent 100%);
     transform: skewX(-25deg);
     animation: glass-shine 6s infinite ease-in-out;
-    pointer-events: none; /* Ensures you can still click links behind it */
+    pointer-events: none;
+    /* Ensures you can still click links behind it */
 }
 
 /* Glass shine effect */
 
 @keyframes shine {
     0% {
-      left: -150%;
+        left: -150%;
     }
 
     20%,
     100% {
-      left: 150%;
+        left: 150%;
     }
-  }
+}
 
-  .glass-shine {
+.glass-shine {
     position: relative;
     overflow: hidden;
-  }
+}
 
-  .glass-shine::after {
+.glass-shine::after {
     content: '';
     position: absolute;
     top: 0;
@@ -995,4 +1036,11 @@ a:hover {
     transform: skewX(-25deg);
     animation: shine 6s infinite;
     pointer-events: none;
-  }
+}
+.hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}

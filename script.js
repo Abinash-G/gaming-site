@@ -255,7 +255,7 @@ function renderStories2(stories) {
   const $in = id => document.getElementById(id);
   const searchInput = $in('Nav-Search');
   const form = $in('nav-search-form');
-  let resultsBox = $in('searchResults') || (() => { const d = document.createElement('div'); d.id='searchResults'; document.body.appendChild(d); return d; })();
+  let resultsBox = $in('searchResults') || (() => { const d = document.createElement('div'); d.id = 'searchResults'; document.body.appendChild(d); return d; })();
 
   // base styles (safety)
   Object.assign(resultsBox.style, {
@@ -265,42 +265,42 @@ function renderStories2(stories) {
   resultsBox.style.scrollbarWidth = 'none';
   resultsBox.style.msOverflowStyle = 'none';
 
-  const escapeHtml = s => String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const escapeHtml = s => String(s || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-  function render(items){
-    resultsBox.innerHTML = items.length ? items.map(it=>`
-      <a class="search-row" href="${escapeHtml(it.link||'#')}">
-        <img src="${escapeHtml(it.img||'')}" alt="${escapeHtml(it.title||'')}" />
+  function render(items) {
+    resultsBox.innerHTML = items.length ? items.map(it => `
+      <a class="search-row" href="${escapeHtml(it.link || '#')}">
+        <img src="${escapeHtml(it.img || '')}" alt="${escapeHtml(it.title || '')}" />
         <div class="search-info">
-          <div class="title">${escapeHtml(it.title||'Untitled')}</div>
-          <div class="rating">${it.rating? '⭐ '+escapeHtml(it.rating): ''}</div>
+          <div class="title">${escapeHtml(it.title || 'Untitled')}</div>
+          <div class="rating">${it.rating ? '⭐ ' + escapeHtml(it.rating) : ''}</div>
         </div>
       </a>
     `).join('') : `<div class="search-no-results">No results found</div>`;
   }
 
-  function position(){
+  function position() {
     const r = searchInput.getBoundingClientRect(), scrollY = window.scrollY || 0, vw = Math.max(document.documentElement.clientWidth, window.innerWidth);
     if (resultsBox.parentElement !== document.body) document.body.appendChild(resultsBox);
     const top = r.bottom + scrollY + 8;
-    if (vw <= 767) { resultsBox.style.left='8px'; resultsBox.style.width='calc(100% - 16px)'; resultsBox.style.top=top+'px'; }
-    else { resultsBox.style.left = r.left + 'px'; resultsBox.style.width = Math.max(r.width,320) + 'px'; resultsBox.style.top = top + 'px'; }
+    if (vw <= 767) { resultsBox.style.left = '8px'; resultsBox.style.width = 'calc(100% - 16px)'; resultsBox.style.top = top + 'px'; }
+    else { resultsBox.style.left = r.left + 'px'; resultsBox.style.width = Math.max(r.width, 320) + 'px'; resultsBox.style.top = top + 'px'; }
   }
 
-  function show(){ position(); resultsBox.style.display='block'; }
-  function hide(collapse=false){ resultsBox.style.display='none'; if(collapse){ searchInput.value=''; searchInput.style.width='0'; searchInput.style.display='none'; } }
+  function show() { position(); resultsBox.style.display = 'block'; }
+  function hide(collapse = false) { resultsBox.style.display = 'none'; if (collapse) { searchInput.value = ''; searchInput.style.width = '0'; searchInput.style.display = 'none'; } }
 
   // search logic — replace with your fuse/runSearch if needed
-  function doSearch(q){
+  function doSearch(q) {
     if (!q) return [];
-    if (typeof fuse !== 'undefined') return fuse.search(q).map(r=>r.item);
+    if (typeof fuse !== 'undefined') return fuse.search(q).map(r => r.item);
     if (typeof runSearch === 'function') return runSearch(q);
-    if (Array.isArray(window.GAMES)) return window.GAMES.filter(g=> (g.title||'').toLowerCase().includes(q.toLowerCase()));
+    if (Array.isArray(window.GAMES)) return window.GAMES.filter(g => (g.title || '').toLowerCase().includes(q.toLowerCase()));
     return [];
   }
 
   // input handler
-  searchInput.addEventListener('input', ()=> {
+  searchInput.addEventListener('input', () => {
     const q = searchInput.value.trim();
     if (!q) return hide();
     const res = doSearch(q);
@@ -309,25 +309,25 @@ function renderStories2(stories) {
   });
 
   // toggle button(s) — hide magnifier on mobile when opened
-  Array.from(document.querySelectorAll('#nav-search-form button[type="button"]')).forEach(btn=>{
-    btn.addEventListener('click', e=>{
+  Array.from(document.querySelectorAll('#nav-search-form button[type="button"]')).forEach(btn => {
+    btn.addEventListener('click', e => {
       e.stopPropagation();
       const open = searchInput.style.display !== 'none' && searchInput.style.width && searchInput.style.width !== '0px';
       if (!open) {
-        searchInput.style.display='block';
-        setTimeout(()=> searchInput.style.width='220px', 10);
+        searchInput.style.display = 'block';
+        setTimeout(() => searchInput.style.width = '220px', 10);
         searchInput.focus();
         if (window.innerWidth <= 767) btn.style.display = 'none'; // hide icon on mobile when opening
       } else {
         // closing: restore any hidden buttons
-        document.querySelectorAll('#nav-search-form button').forEach(b=>b.style.display='flex');
+        document.querySelectorAll('#nav-search-form button').forEach(b => b.style.display = 'flex');
         hide(true);
       }
     });
   });
 
   // ensure search icon reappears if input collapsed by ESC/outside click
-  document.addEventListener('keydown', e => { if (e.key==='Escape') { document.querySelectorAll('#nav-search-form button').forEach(b=>b.style.display='flex'); hide(true); } });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') { document.querySelectorAll('#nav-search-form button').forEach(b => b.style.display = 'flex'); hide(true); } });
 
   // clicks inside results: open same tab (prevent new tab)
   resultsBox.addEventListener('click', e => {
@@ -338,20 +338,20 @@ function renderStories2(stories) {
     if (href && href !== '#') window.location.href = href;
     hide(true);
     // restore search icon(s)
-    document.querySelectorAll('#nav-search-form button').forEach(b=>b.style.display='flex');
+    document.querySelectorAll('#nav-search-form button').forEach(b => b.style.display = 'flex');
   });
 
   // click outside -> hide and restore icons
   document.addEventListener('click', e => {
-    if (!resultsBox.contains(e.target) && e.target !== searchInput && !Array.from(document.querySelectorAll('#nav-search-form button')).some(b=>b.contains(e.target))) {
-      document.querySelectorAll('#nav-search-form button').forEach(b=>b.style.display='flex');
+    if (!resultsBox.contains(e.target) && e.target !== searchInput && !Array.from(document.querySelectorAll('#nav-search-form button')).some(b => b.contains(e.target))) {
+      document.querySelectorAll('#nav-search-form button').forEach(b => b.style.display = 'flex');
       hide();
     }
   });
 
   // reposition on resize/orientation
-  window.addEventListener('resize', ()=> { if (resultsBox.style.display==='block') position(); });
-  window.addEventListener('orientationchange', ()=> { if (resultsBox.style.display==='block') position(); });
+  window.addEventListener('resize', () => { if (resultsBox.style.display === 'block') position(); });
+  window.addEventListener('orientationchange', () => { if (resultsBox.style.display === 'block') position(); });
 
 })();
 
@@ -408,82 +408,82 @@ setTimeout(hideLoader, 5000); // 5000ms = 5 seconds
 
 // Search function
 
-(async function(){
-  const JSON_PATHS=['./Trending.json','./Top-free.json','./Top-paid.json','./Gamepage/assets/data.json'],
-        MAX_RESULTS=20, FUSE_THRESHOLD=0.36;
-  const navForm=document.getElementById('nav-search-form'),
-        searchInput=document.getElementById('Nav-Search');
-  if(!navForm||!searchInput) return;
+(async function () {
+  const JSON_PATHS = ['./Trending.json', './Top-free.json', './Top-paid.json', './Gamepage/assets/data.json'],
+    MAX_RESULTS = 20, FUSE_THRESHOLD = 0.36;
+  const navForm = document.getElementById('nav-search-form'),
+    searchInput = document.getElementById('Nav-Search');
+  if (!navForm || !searchInput) return;
 
-  const mag=navForm.querySelector('i.fa-magnifying-glass, i.fa-search, i.fa-solid.fa-magnifying-glass'),
-        searchBtn=mag?mag.closest('button'):navForm.querySelector('button');
+  const mag = navForm.querySelector('i.fa-magnifying-glass, i.fa-search, i.fa-solid.fa-magnifying-glass'),
+    searchBtn = mag ? mag.closest('button') : navForm.querySelector('button');
 
-  let resultsEl=document.getElementById('searchResults');
-  if(!resultsEl){ resultsEl=document.createElement('div'); resultsEl.id='searchResults'; document.body.appendChild(resultsEl); }
+  let resultsEl = document.getElementById('searchResults');
+  if (!resultsEl) { resultsEl = document.createElement('div'); resultsEl.id = 'searchResults'; document.body.appendChild(resultsEl); }
 
-  navForm.addEventListener('submit', e=>e.preventDefault());
+  navForm.addEventListener('submit', e => e.preventDefault());
 
-  async function ensureFuse(){
-    if(window.Fuse) return;
-    await new Promise((res,rej)=>{
-      const s=document.createElement('script');
-      s.src='https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js';
-      s.onload=res; s.onerror=()=>rej(); document.head.appendChild(s);
+  async function ensureFuse() {
+    if (window.Fuse) return;
+    await new Promise((res, rej) => {
+      const s = document.createElement('script');
+      s.src = 'https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js';
+      s.onload = res; s.onerror = () => rej(); document.head.appendChild(s);
     });
   }
   await ensureFuse();
 
-  const escHtml=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),
-        escAttr=s=>String(s||'').replace(/"/g,'&quot;'),
-        highlight=(t,q)=>{
-          const i=t.toLowerCase().indexOf(q.toLowerCase());
-          return i===-1?escHtml(t):escHtml(t.slice(0,i))+"<mark>"+escHtml(t.slice(i,i+q.length))+"</mark>"+escHtml(t.slice(i+q.length));
-        };
+  const escHtml = s => String(s || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])),
+    escAttr = s => String(s || '').replace(/"/g, '&quot;'),
+    highlight = (t, q) => {
+      const i = t.toLowerCase().indexOf(q.toLowerCase());
+      return i === -1 ? escHtml(t) : escHtml(t.slice(0, i)) + "<mark>" + escHtml(t.slice(i, i + q.length)) + "</mark>" + escHtml(t.slice(i + q.length));
+    };
 
-  async function tryFetch(u){ try{ const r=await fetch(u); if(!r.ok) return null; return await r.json(); }catch{ return null; } }
+  async function tryFetch(u) { try { const r = await fetch(u); if (!r.ok) return null; return await r.json(); } catch { return null; } }
 
-  let allItems=[], fuse=null;
-  async function loadAll(){
-    const old=searchInput.placeholder;
-    searchInput.disabled=true;
-    searchInput.placeholder='Loading search...';
-    const datas=await Promise.all(JSON_PATHS.map(tryFetch));
-    const arrs=datas.filter(Boolean);
-    allItems=arrs.flatMap(d=>{
-      if(Array.isArray(d)) return d;
-      if(Array.isArray(d.items)) return d.items;
-      if(Array.isArray(d.games)) return d.games;
-      if(Array.isArray(d.data)) return d.data;
+  let allItems = [], fuse = null;
+  async function loadAll() {
+    const old = searchInput.placeholder;
+    searchInput.disabled = true;
+    searchInput.placeholder = 'Loading search...';
+    const datas = await Promise.all(JSON_PATHS.map(tryFetch));
+    const arrs = datas.filter(Boolean);
+    allItems = arrs.flatMap(d => {
+      if (Array.isArray(d)) return d;
+      if (Array.isArray(d.items)) return d.items;
+      if (Array.isArray(d.games)) return d.games;
+      if (Array.isArray(d.data)) return d.data;
       return [];
-    }).map(x=>({
-      title: (x.title||x.name||'').trim(),
-      img: x.img||x.image||'',
-      link: x.link||x.url||'#',
-      rating: x.rating||''
-    })).filter(x=>x.title);
-    fuse=new Fuse(allItems,{keys:['title'],includeScore:true,threshold:FUSE_THRESHOLD});
-    searchInput.disabled=false;
-    searchInput.placeholder=old;
+    }).map(x => ({
+      title: (x.title || x.name || '').trim(),
+      img: x.img || x.image || '',
+      link: x.link || x.url || '#',
+      rating: x.rating || ''
+    })).filter(x => x.title);
+    fuse = new Fuse(allItems, { keys: ['title'], includeScore: true, threshold: FUSE_THRESHOLD });
+    searchInput.disabled = false;
+    searchInput.placeholder = old;
     console.log('Search index:', allItems.length);
   }
   await loadAll();
 
-  let selectedIndex=-1;
+  let selectedIndex = -1;
 
-  function render(results,q){
-    selectedIndex=-1;
-    if(!q){ resultsEl.style.display='none'; return; }
-    resultsEl.style.display='block';
-    if(!results.length){
-      resultsEl.innerHTML=`<div class="search-no-results">No results for "<strong>${escHtml(q)}</strong>"</div>`;
+  function render(results, q) {
+    selectedIndex = -1;
+    if (!q) { resultsEl.style.display = 'none'; return; }
+    resultsEl.style.display = 'block';
+    if (!results.length) {
+      resultsEl.innerHTML = `<div class="search-no-results">No results for "<strong>${escHtml(q)}</strong>"</div>`;
       positionResults(); return;
     }
-    resultsEl.innerHTML=results.slice(0,MAX_RESULTS).map((item,i)=>`
+    resultsEl.innerHTML = results.slice(0, MAX_RESULTS).map((item, i) => `
       <a class="search-row" data-idx="${i}" href="${escAttr(item.link)}" target="_blank">
         <img src="${escAttr(item.img)}" onerror="this.style.display='none'" width="48" height="64" style="border-radius: 8px">
         <div style="flex:1;min-width:0">
           <div style="font-weight:600;white-space:wrap;overflow:hidden;text-overflow:ellipsis;">
-            ${highlight(item.title,q)}
+            ${highlight(item.title, q)}
           </div>
           <div class="aquatico" style="font-size:12px;color:rgba(255,255,255,0.6)">
             <i class="fa-solid fa-star"></i> ${escHtml(item.rating)}
@@ -493,24 +493,24 @@ setTimeout(hideLoader, 5000); // 5000ms = 5 seconds
     positionResults();
   }
 
-  function doQuery(q){
-    q=q.trim(); if(!q) return [];
-    const exact=[], starts=[], includes=[];
-    const ql=q.toLowerCase();
-    for(const it of allItems){
-      const t=it.title.toLowerCase();
-      if(t===ql) exact.push(it);
-      else if(t.startsWith(ql)) starts.push(it);
-      else if(t.includes(ql)) includes.push(it);
+  function doQuery(q) {
+    q = q.trim(); if (!q) return [];
+    const exact = [], starts = [], includes = [];
+    const ql = q.toLowerCase();
+    for (const it of allItems) {
+      const t = it.title.toLowerCase();
+      if (t === ql) exact.push(it);
+      else if (t.startsWith(ql)) starts.push(it);
+      else if (t.includes(ql)) includes.push(it);
     }
-    const fuzzy = (fuse?fuse.search(q).map(r=>r.item):[]);
-    const out=[]; const seen=new Set();
-    for(const arr of [exact,starts,includes,fuzzy]) for(const it of arr) if(!seen.has(it.title)){ seen.add(it.title); out.push(it); }
+    const fuzzy = (fuse ? fuse.search(q).map(r => r.item) : []);
+    const out = []; const seen = new Set();
+    for (const arr of [exact, starts, includes, fuzzy]) for (const it of arr) if (!seen.has(it.title)) { seen.add(it.title); out.push(it); }
     return out;
   }
 
-  function positionResults(){
-    if(resultsEl.style.display==='none') return;
+  function positionResults() {
+    if (resultsEl.style.display === 'none') return;
     const r = searchInput.getBoundingClientRect();
     // Use fixed coords so mobile address-bar/scroll won't push it off-screen
     const vw = window.innerWidth;
@@ -522,62 +522,62 @@ setTimeout(hideLoader, 5000); // 5000ms = 5 seconds
     const preferredTop = r.bottom + 8;
     const altTop = Math.max(8, r.top - 8 - resultsEl.offsetHeight);
     const top = (spaceBelow < Math.min(resultsEl.offsetHeight || 200, window.innerHeight * 0.45)) ? altTop : preferredTop;
-  
+
     resultsEl.style.width = width + 'px';
     resultsEl.style.left = Math.max(8, left) + 'px';
     resultsEl.style.top = Math.max(8, top) + 'px';
     resultsEl.style.display = 'block';
-  }  
-
-  function openSearch(){ searchInput.style.display='block'; setTimeout(()=>searchInput.style.width='200px',10); searchInput.focus(); positionResults(); }
-  function closeSearch(){ searchInput.style.width='0'; setTimeout(()=>{ searchInput.style.display='none'; resultsEl.style.display='none'; },300); }
-
-  if(searchBtn){
-    searchBtn.addEventListener('pointerdown',e=>e.stopImmediatePropagation());
-    searchBtn.addEventListener('click',e=>{ e.preventDefault(); openSearch(); resultsEl.innerHTML=''; });
   }
 
-  const stop=e=>e.stopPropagation();
-  searchInput.addEventListener('pointerdown',stop);
-  resultsEl.addEventListener('pointerdown',stop);
+  function openSearch() { searchInput.style.display = 'block'; setTimeout(() => searchInput.style.width = '200px', 10); searchInput.focus(); positionResults(); }
+  function closeSearch() { searchInput.style.width = '0'; setTimeout(() => { searchInput.style.display = 'none'; resultsEl.style.display = 'none'; }, 300); }
 
-  searchInput.addEventListener('input',()=> render(doQuery(searchInput.value), searchInput.value));
+  if (searchBtn) {
+    searchBtn.addEventListener('pointerdown', e => e.stopImmediatePropagation());
+    searchBtn.addEventListener('click', e => { e.preventDefault(); openSearch(); resultsEl.innerHTML = ''; });
+  }
 
-  searchInput.addEventListener('keydown',e=>{
-    const rows=resultsEl.querySelectorAll('.search-row');
-    if(e.key==='ArrowDown'){ e.preventDefault(); if(rows.length) selectedIndex=(selectedIndex+1)%rows.length; }
-    if(e.key==='ArrowUp'){ e.preventDefault(); if(rows.length) selectedIndex=(selectedIndex-1+rows.length)%rows.length; }
-    if(e.key==='Enter'){ e.preventDefault(); const rowsNow=resultsEl.querySelectorAll('.search-row'); if(selectedIndex>=0 && rowsNow[selectedIndex]) rowsNow[selectedIndex].click(); }
-    if(e.key==='Escape'){ searchInput.value=''; render([], ''); closeSearch(); }
+  const stop = e => e.stopPropagation();
+  searchInput.addEventListener('pointerdown', stop);
+  resultsEl.addEventListener('pointerdown', stop);
+
+  searchInput.addEventListener('input', () => render(doQuery(searchInput.value), searchInput.value));
+
+  searchInput.addEventListener('keydown', e => {
+    const rows = resultsEl.querySelectorAll('.search-row');
+    if (e.key === 'ArrowDown') { e.preventDefault(); if (rows.length) selectedIndex = (selectedIndex + 1) % rows.length; }
+    if (e.key === 'ArrowUp') { e.preventDefault(); if (rows.length) selectedIndex = (selectedIndex - 1 + rows.length) % rows.length; }
+    if (e.key === 'Enter') { e.preventDefault(); const rowsNow = resultsEl.querySelectorAll('.search-row'); if (selectedIndex >= 0 && rowsNow[selectedIndex]) rowsNow[selectedIndex].click(); }
+    if (e.key === 'Escape') { searchInput.value = ''; render([], ''); closeSearch(); }
     // update visual selection
-    Array.from(resultsEl.querySelectorAll('.search-row')).forEach((el,i)=> el.classList.toggle('selected', i===selectedIndex));
+    Array.from(resultsEl.querySelectorAll('.search-row')).forEach((el, i) => el.classList.toggle('selected', i === selectedIndex));
   });
 
-  document.addEventListener('pointerdown', e=>{ if(navForm.contains(e.target)||resultsEl.contains(e.target)) return; closeSearch(); }, true);
-  window.addEventListener('scroll', ()=>{ if(resultsEl.style.display!=='none') positionResults(); }, true);
+  document.addEventListener('pointerdown', e => { if (navForm.contains(e.target) || resultsEl.contains(e.target)) return; closeSearch(); }, true);
+  window.addEventListener('scroll', () => { if (resultsEl.style.display !== 'none') positionResults(); }, true);
   window.addEventListener('resize', positionResults);
 })();
 
 // Data Saver for mobile
 
-(function(){
+(function () {
   const MOBILE_MAX = 767;
   const proxyHost = 'https://images.weserv.nl/';
 
-  function makeProxyUrl(orig, w=960, q=45){
+  function makeProxyUrl(orig, w = 960, q = 45) {
     if (!orig) return orig;
     if (/^(data:|blob:)/.test(orig)) return orig;
     try {
       const u = new URL(orig, location.href);
       if (u.href.startsWith(proxyHost)) return u.href;
-      const hostPath = u.href.replace(/^https?:\/\//,'');
+      const hostPath = u.href.replace(/^https?:\/\//, '');
       return `${proxyHost}?url=${encodeURIComponent(hostPath)}&w=${w}&q=${q}`;
-    } catch(e){
+    } catch (e) {
       return orig;
     }
   }
 
-  function applyLowQuality(img){
+  function applyLowQuality(img) {
     if (img.dataset.lqApplied) return;
     const orig = img.dataset.origSrc || img.getAttribute('src') || img.src;
     img.dataset.origSrc = orig;
@@ -591,12 +591,12 @@ setTimeout(hideLoader, 5000); // 5000ms = 5 seconds
     // set a small low-quality src immediately, keep srcset for responsive picks
     img.src = p320;
     img.srcset = `${p320} 320w, ${p640} 640w, ${p960} 960w`;
-    img.sizes  = '(max-width: 767px) 100vw, 960px';
+    img.sizes = '(max-width: 767px) 100vw, 960px';
 
     // remove any pixelated rendering — keep normal smooth rendering
     img.style.imageRendering = '';
 
-    function onError(){
+    function onError() {
       img.removeEventListener('error', onError);
       if (img.dataset.origSrc) {
         img.src = img.dataset.origSrc;
@@ -612,8 +612,8 @@ setTimeout(hideLoader, 5000); // 5000ms = 5 seconds
     img.dataset.lqApplied = '1';
   }
 
-  function revertImg(img){
-    if (img.dataset.origSrc && window.innerWidth > MOBILE_MAX){
+  function revertImg(img) {
+    if (img.dataset.origSrc && window.innerWidth > MOBILE_MAX) {
       img.src = img.dataset.origSrc;
       img.removeAttribute('srcset');
       img.removeAttribute('sizes');
@@ -622,28 +622,28 @@ setTimeout(hideLoader, 5000); // 5000ms = 5 seconds
     }
   }
 
-  function runOnce(){
-    document.querySelectorAll('img').forEach(img=>{
+  function runOnce() {
+    document.querySelectorAll('img').forEach(img => {
       if (window.innerWidth <= MOBILE_MAX) applyLowQuality(img);
       else revertImg(img);
     });
   }
 
-  window.addEventListener('resize', (()=>{
-    let t; return ()=>{ clearTimeout(t); t=setTimeout(runOnce,150); };
+  window.addEventListener('resize', (() => {
+    let t; return () => { clearTimeout(t); t = setTimeout(runOnce, 150); };
   })());
 
   document.addEventListener('DOMContentLoaded', runOnce);
 
-  new MutationObserver(muts=>{
-    muts.forEach(m=>{
-      m.addedNodes && m.addedNodes.forEach(n=>{
-        if (n.nodeType===1 && n.tagName==='IMG') {
+  new MutationObserver(muts => {
+    muts.forEach(m => {
+      m.addedNodes && m.addedNodes.forEach(n => {
+        if (n.nodeType === 1 && n.tagName === 'IMG') {
           if (window.innerWidth <= MOBILE_MAX) applyLowQuality(n);
-        } else if (n.querySelectorAll){
+        } else if (n.querySelectorAll) {
           n.querySelectorAll('img').forEach(img => { if (window.innerWidth <= MOBILE_MAX) applyLowQuality(img); });
         }
       });
     });
-  }).observe(document.documentElement, {childList:true, subtree:true});
+  }).observe(document.documentElement, { childList: true, subtree: true });
 })();
