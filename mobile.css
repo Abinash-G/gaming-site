@@ -686,7 +686,7 @@ body {
         top: 80px !important;
         left: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.5) !important;
+        background-color: rgba(0, 0, 0, 0.6) !important;
         /* must be non-transparent */
         -webkit-backdrop-filter: blur(12px) !important;
         /* iOS/Safari */
@@ -737,7 +737,7 @@ body {
     }
 
     ::-webkit-scrollbar-thumb {
-        background: #008cff;
+        background: #005091;
         /* Bright Blue */
         border-radius: 10px;
     }
@@ -812,11 +812,4 @@ body {
         justify-content: center;
         margin-top: 10px;
     }
-}
-.hide-scrollbar {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-.hide-scrollbar::-webkit-scrollbar {
-    display: none;
 }
