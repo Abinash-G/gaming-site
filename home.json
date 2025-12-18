@@ -60,7 +60,7 @@
     {
       "title": "Red Dead Redemption 2",
       "img": "https://assets.vg247.com/current//2018/05/red_dead_redemption_2_cover_art_1.jpg",
-      "link": "./Gamepage/game.html?game=rdr2"
+      "link": "./Gamepage/game.html?game=red-dead-redemption-2"
     },
     {
       "title": "The Witcher 3",
@@ -186,86 +186,86 @@
       }
     ],
     "editorsPicks": [
-    {
-      "title": "Metaphor: ReFantazio",
-      "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2679460/library_600x900_2x.jpg",
-      "link": "./Gamepage/game.html?game=metaphor-refantazio"
-    },
-    {
-      "title": "Grand Theft Auto V",
-      "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/library_600x900_2x.jpg",
-      "link": "games/gta-v.html"
-    },
-    {
-      "title": "Baldur's Gate 3",
-      "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/library_600x900_2x.jpg",
-      "link": "./Gamepage/game.html?game=baldurs-gate-3"
-    },
-    {
-      "title": "Black Myth: Wukong",
-      "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/library_600x900_2x.jpg",
-      "link": "./Gamepage/game.html?game=black-myth-wukong"
-    },
-    {
-      "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
-      "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1643320/library_600x900_2x.jpg",
-      "link": "./Gamepage/game.html?game=stalker-2"
-    }
-  ],
-  "recentlyUpdated": [
-    {
-      "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
-      "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1643320/library_600x900_2x.jpg",
-      "link": "./Gamepage/game.html?game=stalker-2"
-    },
-    {
-      "title": "Fortnite",
-      "img": "https://cdn1.epicgames.com/offer/fn/EN_FNFigment_37-00_C1S6_EGS_Launcher_KeyArt_Blade_1200x1600_1200x1600-47bcc2460eec25bf410a71d3449585d2",
-      "link": "./Gamepage/game.html?game=fortnite"
-    },
-    {
-      "title": "Cyberpunk 2077",
-      "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900_2x.jpg",
-      "link": "./Gamepage/game.html?game=cyberpunk-2077"
-    },
-    {
-      "title": "Apex Legends",
-      "img": "https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg",
-      "link": "./Gamepage/game.html?game=apex-legends"
-    },
-    {
-      "title": "Minecraft",
-      "img": "https://m.media-amazon.com/images/M/MV5BMTExYTZjMzMtY2NkZi00MmRlLWExMjEtZWZiYzlhYTM1ZjQ1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-      "link": "./Gamepage/game.html?game=minecraft"
-    }
-  ],
-  "hiddenGems": [
-    {
-      "title": "Disco Elysium",
-      "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/library_600x900_2x.jpg",
-      "link": "./Gamepage/game.html?game=disco-elysium"
-    },
-    {
-      "title": "The Finals",
-      "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2073850/library_600x900_2x.jpg",
-      "link": "./Gamepage/game.html?game=the-finals"
-    },
-    {
-      "title": "Red Dead Redemption 2",
-      "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/library_600x900_2x.jpg",
-      "link": "games/red-dead-redemption-2.html"
-    },
-    {
-      "title": "Control",
-      "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/870780/library_600x900_2x.jpg",
-      "link": "./Gamepage/game.html?game=control"
-    },
-    {
-      "title": "Rainbow Six Siege",
-      "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/library_600x900_2x.jpg",
-      "link": "games/rainbow-six-siege.html"
-    }
-  ]
+      {
+        "title": "Metaphor: ReFantazio",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2679460/library_600x900_2x.jpg",
+        "link": "./Gamepage/game.html?game=metaphor-refantazio"
+      },
+      {
+        "title": "Grand Theft Auto V",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/library_600x900_2x.jpg",
+        "link": "./Gamepage/game.html?game=gta-v"
+      },
+      {
+        "title": "Baldur's Gate 3",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/library_600x900_2x.jpg",
+        "link": "./Gamepage/game.html?game=baldurs-gate-3"
+      },
+      {
+        "title": "Black Myth: Wukong",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/library_600x900_2x.jpg",
+        "link": "./Gamepage/game.html?game=black-myth-wukong"
+      },
+      {
+        "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1643320/library_600x900_2x.jpg",
+        "link": "./Gamepage/game.html?game=stalker-2"
+      }
+    ],
+    "recentlyUpdated": [
+      {
+        "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1643320/library_600x900_2x.jpg",
+        "link": "./Gamepage/game.html?game=stalker-2"
+      },
+      {
+        "title": "Fortnite",
+        "img": "https://cdn1.epicgames.com/offer/fn/EN_FNFigment_37-00_C1S6_EGS_Launcher_KeyArt_Blade_1200x1600_1200x1600-47bcc2460eec25bf410a71d3449585d2",
+        "link": "./Gamepage/game.html?game=fortnite"
+      },
+      {
+        "title": "Cyberpunk 2077",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900_2x.jpg",
+        "link": "./Gamepage/game.html?game=cyberpunk-2077"
+      },
+      {
+        "title": "Apex Legends",
+        "img": "https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg",
+        "link": "./Gamepage/game.html?game=apex-legends"
+      },
+      {
+        "title": "Minecraft",
+        "img": "https://m.media-amazon.com/images/M/MV5BMTExYTZjMzMtY2NkZi00MmRlLWExMjEtZWZiYzlhYTM1ZjQ1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "link": "./Gamepage/game.html?game=minecraft"
+      }
+    ],
+    "hiddenGems": [
+      {
+        "title": "Disco Elysium",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/library_600x900_2x.jpg",
+        "link": "./Gamepage/game.html?game=disco-elysium"
+      },
+      {
+        "title": "The Finals",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2073850/library_600x900_2x.jpg",
+        "link": "./Gamepage/game.html?game=the-finals"
+      },
+      {
+        "title": "Red Dead Redemption 2",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/library_600x900_2x.jpg",
+        "link": "./Gamepage/game.html?game=red-dead-redemption-2"
+      },
+      {
+        "title": "Control",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/870780/library_600x900_2x.jpg",
+        "link": "./Gamepage/game.html?game=control"
+      },
+      {
+        "title": "Rainbow Six Siege",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/library_600x900_2x.jpg",
+        "link": "./Gamepage/game.html?game=rainbow-six-siege"
+      }
+    ]
   },
   "stories": [
     {

@@ -340,8 +340,8 @@
     "release": "2022-02-25",
     "genre": "Action,RPG,Open-World"
   },
-  "rdr2": {
-    "slug": "rdr2",
+  "red-dead-redemption-2": {
+    "slug": "red-dead-redemption-2",
     "title": "Red Dead Redemption 2",
     "youtube_id": "eaW0tYpxyp0",
     "description": "An epic western open-world adventure from Rockstar Games.",
@@ -375,6 +375,43 @@
     "developer": "Rockstar Games",
     "publisher": "Rockstar Games",
     "release": "2019-11-05",
+    "genre": "Action,Adventure,Open-World"
+  },
+  "gta-v": {
+    "slug": "gta-v",
+    "title": "Grand Theft Auto V",
+    "youtube_id": "QkkoHAzjnUs",
+    "description": "The critically acclaimed open world of Grand Theft Auto V and GTA Online.",
+    "about": "When a young street hustler, a retired bank robber and a terrifying psychopath find themselves entangled with some of the most frightening and deranged elements of the criminal underworld, the U.S. government and the entertainment industry, they must pull off a series of dangerous heists to survive in a ruthless city in which they can trust nobody, least of all each other.",
+    "screenshots": [
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/ss_d60e16422fc1605181e0fedee3e2cfc1e02c750e.1920x1080.jpg?t=1763409398",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/ss_11409331d57966ef193d66ffcded569d02a4e034.1920x1080.jpg?t=1763409398",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/ss_63cc7ea967bf808c73129792d9ae8e3fdb2962bf.1920x1080.jpg?t=1763409398"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz",
+        "gpu": "NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)",
+        "memory": "4 GB RAM",
+        "storage": "110 GB"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "cpu": "Intel Core i5 3470 @ 3.2GHz (4 CPUs) / AMD X8 FX-8350 @ 4GHz (8 CPUs)",
+        "gpu": "NVIDIA GTX 660 2GB / AMD HD 7870 2GB",
+        "memory": "8 GB RAM",
+        "storage": "110 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
+      "title": "18+",
+      "description": "Mature Themes, Violence, Drugs"
+    },
+    "developer": "Rockstar North",
+    "publisher": "Rockstar Games",
+    "release": "2015-04-14",
     "genre": "Action,Adventure,Open-World"
   },
   "witcher-3": {
@@ -454,24 +491,23 @@
     "slug": "forza-horizon-5",
     "title": "Forza Horizon 5",
     "youtube_id": "FYH9n37B7Yw",
-    "description": "A massive open-world racing adventure set in Mexico.",
-    "about": "Forza Horizon 5 is an open-world racing game developed by Playground Games and published by Xbox Game Studios.",
+    "description": "Blast off to the visually stunning, vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action.",
+    "about": "Your Ultimate Horizon Adventure awaits! Explore the vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action in hundreds of the world’s greatest cars.",
     "screenshots": [
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551360/ss_cf56e25a0290556ba83229eb0ab370d10be0407c.1920x1080.jpg?t=1746471508",
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551360/ss_b65236b365315ebb6da6114ce42cd74b59cab3c8.1920x1080.jpg?t=1746471508"
+      "https://cdn.akamai.steamstatic.com/steam/apps/1551360/ss_4c5e6357b347a55ed929833ba793b57a79d2.1920x1080.jpg"
     ],
     "requirements": {
       "minimum": {
         "os": "Windows 10",
-        "cpu": "Intel i5-4460 / AMD Ryzen 3 1200",
-        "gpu": "NVIDIA GTX 970 / AMD RX 470",
+        "cpu": "Intel i5-4460",
+        "gpu": "NVidia GTX 970",
         "memory": "8 GB RAM",
         "storage": "110 GB"
       },
       "recommended": {
         "os": "Windows 10",
-        "cpu": "Intel i5-8400 / AMD Ryzen 5 1500X",
-        "gpu": "NVIDIA GTX 1070 / AMD RX 590",
+        "cpu": "Intel i5-8400",
+        "gpu": "NVidia GTX 1070",
         "memory": "16 GB RAM",
         "storage": "110 GB"
       }
@@ -479,17 +515,17 @@
     "age_rating": {
       "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/3.png",
       "title": "3+",
-      "description": "Racing"
+      "description": "In-Game Purchases"
     },
     "developer": "Playground Games",
     "publisher": "Xbox Game Studios",
     "release": "2021-11-09",
-    "genre": "Racing,Open-World"
+    "genre": "Racing, Open World"
   },
   "resident-evil-4-remake": {
     "slug": "resident-evil-4-remake",
     "title": "Resident Evil 4 Remake",
-    "youtube_id": "XZ_0ek5v0tQ",
+    "youtube_id": "pQsyi4j1RqM",
     "description": "A reimagined survival-horror classic.",
     "about": "Resident Evil 4 Remake is a survival-horror game developed and published by Capcom, retelling Leon Kennedy’s rescue mission with modern visuals.",
     "screenshots": [
@@ -525,28 +561,26 @@
   "diablo-iv": {
     "slug": "diablo-iv",
     "title": "Diablo IV",
-    "youtube_id": "0SSYzl9fXOQ",
-    "description": "A dark, open-world action RPG where humanity battles the return of Lilith.",
-    "about": "Diablo IV is an action RPG developed and published by Blizzard Entertainment. It features an open world, class-based combat, dungeons, PvP zones, and the return of Lilith as the main antagonist.",
+    "youtube_id": "Ro2673OHeeI",
+    "description": "Join the fight for Sanctuary in Diablo IV, the ultimate action RPG adventure.",
+    "about": "Diablo IV is the ultimate action RPG experience with endless evil to slaughter, countless abilities to master, nightmarish dungeons, and legendary loot.",
     "screenshots": [
-      "https://cdn.akamai.steamstatic.com/steam/apps/2344520/ss_43a4caaeccf74bfebf07efde396ed1aaba38f868.1920x1080.jpg",
-      "https://cdn.akamai.steamstatic.com/steam/apps/2344520/ss_68b7e18e2f212cb3f77cb93e605edfee5e5ce97e.1920x1080.jpg",
-      "https://cdn.akamai.steamstatic.com/steam/apps/2344520/ss_346aa8afba9b5a2e1dcdbc663f796416c7c78544.1920x1080.jpg"
+      "https://cdn.akamai.steamstatic.com/steam/apps/2344520/ss_4c5e6357b347a55ed929833ba793b57a79d2.1920x1080.jpg"
     ],
     "requirements": {
       "minimum": {
-        "os": "Windows 10 64-bit",
-        "cpu": "Intel Core i5-2500K / AMD FX-8100",
-        "gpu": "NVIDIA GTX 660 / AMD R9 280",
+        "os": "Windows 10",
+        "cpu": "Intel Core i5-2500K",
+        "gpu": "NVIDIA GTX 660",
         "memory": "8 GB RAM",
-        "storage": "90 GB SSD"
+        "storage": "90 GB"
       },
       "recommended": {
-        "os": "Windows 10 64-bit",
-        "cpu": "Intel Core i5-4670K / AMD R3-1300X",
-        "gpu": "NVIDIA GTX 970 / AMD RX 470",
+        "os": "Windows 10",
+        "cpu": "Intel Core i5-4670K",
+        "gpu": "NVIDIA GTX 970",
         "memory": "16 GB RAM",
-        "storage": "90 GB SSD"
+        "storage": "90 GB"
       }
     },
     "age_rating": {
@@ -556,8 +590,8 @@
     },
     "developer": "Blizzard Entertainment",
     "publisher": "Blizzard Entertainment",
-    "release": "2023-06-06",
-    "genre": "Action,RPG"
+    "release": "2023-06-05",
+    "genre": "Action, RPG"
   },
   "hogwarts-legacy": {
     "slug": "hogwarts-legacy",
@@ -636,22 +670,24 @@
   "fortnite": {
     "slug": "fortnite",
     "title": "Fortnite",
-    "youtube_id": "2gUtfBmw86Y",
-    "description": "A massive battle royale and creative sandbox game.",
-    "about": "Fortnite is an online multiplayer shooter developed by Epic Games featuring battle royale, creative mode, and events.",
-    "screenshots": [],
+    "youtube_id": "WJW-VvmRKsE",
+    "description": "Create, play, and battle with friends using the power of Unreal Engine 5.",
+    "about": "Fortnite is a free-to-play Battle Royale game with numerous game modes for every type of game player. Watch a concert, build an island or fight.",
+    "screenshots": [
+      "https://cdn2.unrealengine.com/fortnite-battle-royale-v29-20-desktop-header-1920x1080-4b360156d408.jpg"
+    ],
     "requirements": {
       "minimum": {
-        "os": "Windows 10 64-bit",
-        "cpu": "Core i3-3225 / AMD FX-4350",
-        "gpu": "Intel HD 4000 / AMD Radeon Vega 8",
+        "os": "Windows 10",
+        "cpu": "Core i3-3225 3.3 GHz",
+        "gpu": "Intel HD 4000",
         "memory": "8 GB RAM",
         "storage": "30 GB"
       },
       "recommended": {
-        "os": "Windows 10 64-bit",
-        "cpu": "Core i5-7300U / AMD Ryzen 3 3300U",
-        "gpu": "NVIDIA GTX 960 / AMD R9 280",
+        "os": "Windows 10/11",
+        "cpu": "Core i7-8700",
+        "gpu": "Nvidia GTX 960",
         "memory": "16 GB RAM",
         "storage": "30 GB"
       }
@@ -659,32 +695,36 @@
     "age_rating": {
       "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
       "title": "12+",
-      "description": "Violence"
+      "description": "Violence, Interaction"
     },
     "developer": "Epic Games",
     "publisher": "Epic Games",
-    "release": "2017-07-21",
-    "genre": "Shooter,Battle-Royale"
+    "release": "2017-07-25",
+    "genre": "Action, Battle Royale"
   },
   "genshin-impact": {
     "slug": "genshin-impact",
     "title": "Genshin Impact",
-    "youtube_id": "mD4fFz1VxkY",
-    "description": "An anime-style open-world action RPG with elemental combat.",
-    "about": "Genshin Impact is an open-world action RPG developed by miHoYo, featuring a huge world, characters, and elemental combos.",
-    "screenshots": [],
+    "youtube_id": "TAlKhARUcoY",
+    "description": "Step into Teyvat, a vast world teeming with life and flowing with elemental energy.",
+    "about": "You and your sibling arrived here from another world. Separated by an unknown god, stripped of your powers, and cast into a deep slumber, you now awake to a world very different from when you first arrived.",
+    "screenshots": [
+      "https://fastcdn.hoyoverse.com/content-v2/hk4e/129688/42e58753d03fba4e3ac2a9bcd9775a69_3584238971981491630.jpg",
+      "https://images.wallpapersden.com/image/download/genshin-impact-2019_a2prbGyUmZqaraWkpJRmbmdlrWZlbWU.jpg",
+      "https://images8.alphacoders.com/112/thumb-1920-1129503.jpg"
+    ],
     "requirements": {
       "minimum": {
-        "os": "Windows 7 64-bit",
+        "os": "Windows 7 SP1",
         "cpu": "Intel Core i5",
-        "gpu": "NVIDIA GT 1030",
+        "gpu": "NVIDIA GeForce GT 1030",
         "memory": "8 GB RAM",
         "storage": "30 GB"
       },
       "recommended": {
-        "os": "Windows 10 64-bit",
+        "os": "Windows 10",
         "cpu": "Intel Core i7",
-        "gpu": "NVIDIA GTX 1060 6GB",
+        "gpu": "NVIDIA GeForce GTX 1060 6GB",
         "memory": "16 GB RAM",
         "storage": "30 GB"
       }
@@ -692,12 +732,12 @@
     "age_rating": {
       "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
       "title": "12+",
-      "description": "Violence, Mild Language"
+      "description": "Violence, In-Game Purchases"
     },
-    "developer": "miHoYo",
-    "publisher": "miHoYo",
+    "developer": "HoYoverse",
+    "publisher": "Cognosphere",
     "release": "2020-09-28",
-    "genre": "Action,RPG,Open-World"
+    "genre": "Action, RPG"
   },
   "apex-legends": {
     "slug": "apex-legends",
@@ -738,7 +778,9 @@
     "youtube_id": "BGtROJeMPeE",
     "description": "A competitive 5v5 MOBA played by millions.",
     "about": "League of Legends is a multiplayer online battle arena game developed and published by Riot Games.",
-    "screenshots": [],
+    "screenshots": [
+      "https://fluvi.s3.eu-central-1.amazonaws.com/8Ab-4.png"
+    ],
     "requirements": {
       "minimum": {
         "os": "Windows 7",
@@ -874,10 +916,12 @@
   "witcher-4": {
     "slug": "witcher-4",
     "title": "The Witcher 4",
-    "youtube_id": "",
+    "youtube_id": "yWMu6JeT2g8",
     "description": "The new Witcher saga begins.",
     "about": "The Witcher 4 (officially 'Project Polaris') is the next Witcher saga developed by CD Projekt Red using Unreal Engine 5.",
-    "screenshots": [],
+    "screenshots": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDVosgwvVzOcrmXrwL0H13ETNcsIxotmS76jC_DkgFAayI9v8NHqWHU9Gse5pSlNm_ps2WfCzie9yxZiI593-5uNJFT4FlAVWkXE4dRQ&s=10"
+    ],
     "requirements": {
       "minimum": {
         "os": "",
@@ -1009,39 +1053,37 @@
   "doom-eternal": {
     "slug": "doom-eternal",
     "title": "DOOM Eternal",
-    "youtube_id": "FkklG9MA0vM",
-    "description": "A brutal, fast-paced demon-slaying FPS set across Earth and Hell.",
-    "about": "DOOM Eternal is a first-person shooter developed by id Software and published by Bethesda Softworks, continuing the Slayer’s war against Hell’s armies.",
+    "youtube_id": "_l_R9q_G9eU",
+    "description": "Hell’s armies have invaded Earth. Become the Slayer using an epic single-player campaign to conquer demons across dimensions.",
+    "about": "Experience the ultimate combination of speed and power with the next leap in push-forward, first-person combat. As the DOOM Slayer, you return to find Earth has suffered a demonic invasion.",
     "screenshots": [
-      "https://cdn.akamai.steamstatic.com/steam/apps/782330/ss_1d792319ba0b45fdd0dfca6f67867ce54b492236.1920x1080.jpg",
-      "https://cdn.akamai.steamstatic.com/steam/apps/782330/ss_8b3f4c5f1c5b5a875abc50f3717b9f3ceb69c2b6.1920x1080.jpg",
-      "https://cdn.akamai.steamstatic.com/steam/apps/782330/ss_5b673a781b6c2a1752c8f4aad091c98edffea7dd.1920x1080.jpg"
+      "https://cdn.akamai.steamstatic.com/steam/apps/782330/ss_4c5e6357b347a55ed929833ba793b57a79d2.1920x1080.jpg"
     ],
     "requirements": {
       "minimum": {
-        "os": "Windows 10 64-bit",
-        "cpu": "Intel Core i5-4430 / AMD Ryzen 3 1200",
-        "gpu": "NVIDIA GTX 1050 Ti / AMD RX 470",
+        "os": "Windows 7",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GeForce GTX 1050Ti",
         "memory": "8 GB RAM",
-        "storage": "50 GB SSD"
+        "storage": "50 GB"
       },
       "recommended": {
-        "os": "Windows 10 64-bit",
-        "cpu": "Intel Core i7-6700K / AMD Ryzen 7 1800X",
-        "gpu": "NVIDIA GTX 1080 / AMD RX Vega 56",
-        "memory": "16 GB RAM",
-        "storage": "50 GB SSD"
+        "os": "Windows 10",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA GeForce GTX 1080",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
       }
     },
     "age_rating": {
       "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
       "title": "18+",
-      "description": "Extreme Violence, Gore"
+      "description": "Extreme Violence"
     },
     "developer": "id Software",
     "publisher": "Bethesda Softworks",
     "release": "2020-03-20",
-    "genre": "Action,FPS"
+    "genre": "Action, FPS"
   },
   "stalker-2": {
     "slug": "stalker-2",
@@ -1452,21 +1494,20 @@
     "description": "Dive into the world of Destiny 2 to explore the mysteries of the solar system and experience responsive first-person shooter combat.",
     "about": "Destiny 2 is an action MMO with a single evolving world that you and your friends can join anytime, anywhere, absolutely free.",
     "screenshots": [
-      "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_43a4caaeccf74bfebf07efde396ed1aaba38f868.1920x1080.jpg",
-      "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_68b7e18e2f212cb3f77cb93e605edfee5e5ce97e.1920x1080.jpg"
+      "https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_4c5e6357b347a55ed929833ba793b57a79d2.1920x1080.jpg"
     ],
     "requirements": {
       "minimum": {
-        "os": "Windows 7 / 8.1 / 10 64-bit",
-        "cpu": "Intel Core i3-3250 / AMD FX-4350",
-        "gpu": "NVIDIA GeForce GTX 660 / AMD Radeon HD 7850",
+        "os": "Windows 10",
+        "cpu": "Intel Core i3 3250",
+        "gpu": "NVIDIA GeForce GTX 660",
         "memory": "6 GB RAM",
         "storage": "105 GB"
       },
       "recommended": {
-        "os": "Windows 10 64-bit",
-        "cpu": "Intel Core i5-2400 / AMD Ryzen 5 1600",
-        "gpu": "NVIDIA GeForce GTX 970 / AMD Radeon R9 390",
+        "os": "Windows 10",
+        "cpu": "Intel Core i5 2400",
+        "gpu": "NVIDIA GeForce GTX 970",
         "memory": "8 GB RAM",
         "storage": "105 GB"
       }
@@ -1478,8 +1519,8 @@
     },
     "developer": "Bungie",
     "publisher": "Bungie",
-    "release": "2017-09-06",
-    "genre": "Shooter, Action, RPG"
+    "release": "2019-10-01",
+    "genre": "Action, MMO"
   },
   "hades": {
     "slug": "hades",
@@ -2380,5 +2421,1255 @@
     "publisher": "Extremely OK Games, Ltd.",
     "release": "2018-01-25",
     "genre": "Action, Indie, Adventure"
+  },
+  "hades-ii": {
+    "slug": "hades-ii",
+    "title": "Hades II",
+    "youtube_id": "l-iHOnEN4ls",
+    "description": "Battle beyond the Underworld using dark magic to take on the Titan of Time in this bewitching sequel to the award-winning rogue-like dungeon crawler.",
+    "about": "The first-ever sequel from Supergiant Games builds on the best aspects of the original god-like rogue-like dungeon crawler in an all-new, action-packed, endlessly replayable experience rooted in the Underworld of Greek myth and its deep connections to the dawn of witchcraft.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1145350/ss_4c5e6357b347a55ed929833ba793b57a79d2.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Dual Core 2.4 GHz",
+        "gpu": "2GB VRAM",
+        "memory": "8 GB RAM",
+        "storage": "10 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "Quad Core 3.0 GHz",
+        "gpu": "4GB VRAM",
+        "memory": "16 GB RAM",
+        "storage": "10 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Violence"
+    },
+    "developer": "Supergiant Games",
+    "publisher": "Supergiant Games",
+    "release": "2024",
+    "genre": "Action, Rogue-like"
+  },
+  "ori-and-the-will-of-the-wisps": {
+    "slug": "ori-and-the-will-of-the-wisps",
+    "title": "Ori and the Will of the Wisps",
+    "youtube_id": "2reK8k4gzL0",
+    "description": "Embark on an all-new adventure in a vast, exotic world where you’ll encounter towering enemies and challenging puzzles on your quest to unravel Ori’s destiny.",
+    "about": "The little spirit Ori is no stranger to peril, but when a fateful flight puts the owlet Ku in harm’s way, it will take more than quite courage to bring a family back together, heal a broken land, and discover Ori’s true destiny.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1057090/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "AMD Athlon X4 | Intel Core i5 4460",
+        "gpu": "Nvidia GTX 950 | AMD R7 370",
+        "memory": "8 GB RAM",
+        "storage": "20 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "AMD Ryzen 3 | Intel Core i5 6600K",
+        "gpu": "Nvidia GTX 970 | AMD RX 570",
+        "memory": "8 GB RAM",
+        "storage": "20 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/7.png",
+      "title": "7+",
+      "description": "Mild Violence"
+    },
+    "developer": "Moon Studios",
+    "publisher": "Xbox Game Studios",
+    "release": "2020-03-11",
+    "genre": "Action, Adventure, Platformer"
+  },
+  "journey": {
+    "slug": "journey",
+    "title": "Journey",
+    "youtube_id": "_mF8K_SxvS4",
+    "description": "Explore the ancient, mysterious world of Journey as you soar above ruins and glide across sands to discover its secrets.",
+    "about": "Explore the ancient, mysterious world of Journey as you soar above ruins and glide across sands to discover its secrets. Play alone or with a companion and explore its vast world together.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/638230/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7",
+        "cpu": "Intel Core i3-2120 | AMD FX-4350",
+        "gpu": "Nvidia GTS 450 | AMD Radeon HD 5750",
+        "memory": "4 GB RAM",
+        "storage": "4 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i3-2120 | AMD FX-4350",
+        "gpu": "Nvidia GTS 450 | AMD Radeon HD 5750",
+        "memory": "4 GB RAM",
+        "storage": "4 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/3.png",
+      "title": "3+",
+      "description": "Adventure"
+    },
+    "developer": "thatgamecompany",
+    "publisher": "Annapurna Interactive",
+    "release": "2020-06-11",
+    "genre": "Adventure, Indie"
+  },
+  "control": {
+    "slug": "control",
+    "title": "Control",
+    "youtube_id": "uv_KOf9N6nU",
+    "description": "Winner of over 80 awards, Control is a visually stunning third-person action-adventure that will keep you on the edge of your seat.",
+    "about": "After a secretive agency in New York is invaded by an otherworldly threat, you become the new Director struggling to regain Control.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/870780/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7",
+        "cpu": "Intel Core i5-4690 | AMD FX 4350",
+        "gpu": "NVIDIA GeForce GTX 780 | AMD Radeon R9 280X",
+        "memory": "8 GB RAM",
+        "storage": "42 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5-7600K | AMD Ryzen 5 1600X",
+        "gpu": "NVIDIA GeForce GTX 1660/1060 | AMD Radeon RX 580",
+        "memory": "16 GB RAM",
+        "storage": "42 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/16.png",
+      "title": "16+",
+      "description": "Violence"
+    },
+    "developer": "Remedy Entertainment",
+    "publisher": "505 Games",
+    "release": "2020-08-27",
+    "genre": "Action, Adventure"
+  },
+  "disco-elysium": {
+    "slug": "disco-elysium",
+    "title": "Disco Elysium - The Final Cut",
+    "youtube_id": "Pz7P_IitstE",
+    "description": "Disco Elysium - The Final Cut is a groundbreaking role playing game.",
+    "about": "You’re a detective with a unique skill system at your disposal and a whole city block to carve your path across. Interrogate unforgettable characters, crack murders or take bribes.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/632470/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7",
+        "cpu": "Intel Core 2 Duo",
+        "gpu": "DirectX 11 compatible",
+        "memory": "2 GB RAM",
+        "storage": "20 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i7 | AMD 1800 equivalent",
+        "gpu": "NVIDIA GeForce GTX 1060",
+        "memory": "8 GB RAM",
+        "storage": "20 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
+      "title": "18+",
+      "description": "Violence, Language"
+    },
+    "developer": "ZA/UM",
+    "publisher": "ZA/UM",
+    "release": "2019-10-15",
+    "genre": "RPG"
+  },
+  "assassins-creed-valhalla": {
+    "slug": "assassins-creed-valhalla",
+    "title": "Assassin's Creed Valhalla",
+    "youtube_id": "ssrNcwxALS4",
+    "description": "Become a legendary Viking raider on a quest for glory.",
+    "about": "Become a legendary Viking warrior raised on tales of battle and glory. Raid your enemies, grow your settlement, and build your political power in the quest to earn a place among the gods in Valhalla.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/2208920/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "AMD Ryzen 3 1200 | Intel i5-4460",
+        "gpu": "AMD R9 380 | NVIDIA GeForce GTX 960",
+        "memory": "8 GB RAM",
+        "storage": "160 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "AMD Ryzen 5 3600 | Intel i7-8700K",
+        "gpu": "AMD RX 5700 XT | NVIDIA GeForce RTX 2080",
+        "memory": "16 GB RAM",
+        "storage": "160 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
+      "title": "18+",
+      "description": "Violence, Language"
+    },
+    "developer": "Ubisoft Montreal",
+    "publisher": "Ubisoft",
+    "release": "2020-11-10",
+    "genre": "Action, Adventure, RPG"
+  },
+  "metro-exodus": {
+    "slug": "metro-exodus",
+    "title": "Metro Exodus",
+    "youtube_id": "fbbqlvuovQ0",
+    "description": "Flee the shattered ruins of the Moscow Metro and embark on an epic, continent-spanning journey across the post-apocalyptic Russian wilderness.",
+    "about": "Metro Exodus is an epic, story-driven first person shooter from 4A Games that blends deadly combat and stealth with exploration and survival horror in one of the most immersive game worlds ever created.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/412020/ss_be01eefeeffd72586834c2bcc1c91c1305a24480.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7",
+        "cpu": "Intel Core i5-4440",
+        "gpu": "GeForce GTX 670 | Radeon HD 7870",
+        "memory": "8 GB RAM",
+        "storage": "59 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i7-4770K",
+        "gpu": "GeForce GTX 1070 | Radeon RX 580",
+        "memory": "8 GB RAM",
+        "storage": "59 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/18.png",
+      "title": "18+",
+      "description": "Violence, Language"
+    },
+    "developer": "4A Games",
+    "publisher": "Deep Silver",
+    "release": "2019-02-15",
+    "genre": "Action, FPS"
+  },
+  "marvel-rivals": {
+    "slug": "marvel-rivals",
+    "title": "Marvel Rivals",
+    "youtube_id": "RXY-YV1nQZ8",
+    "description": "Marvel Rivals is a Super Hero Team-Based PVP Shooter.",
+    "about": "Assemble an all-star Marvel squad, devise countless strategies and powers to outplay your enemies in destructible battlefields.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/2767030/ss_4c5e6357b347a55ed929833ba793b57a79d2.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5-6600K",
+        "gpu": "NVIDIA GTX 1060",
+        "memory": "12 GB RAM",
+        "storage": "70 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5-10400",
+        "gpu": "NVIDIA RTX 2060",
+        "memory": "16 GB RAM",
+        "storage": "70 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Violence"
+    },
+    "developer": "NetEase Games",
+    "publisher": "NetEase Games",
+    "release": "2024",
+    "genre": "Action, Shooter"
+  },
+  "the-finals": {
+    "slug": "the-finals",
+    "title": "THE FINALS",
+    "youtube_id": "iY2a6s3iL9c",
+    "description": "Join THE FINALS, the world-famous, free-to-play, combat-centered game show!",
+    "about": "Fight alongside your teammates in virtual arenas that you can alter, exploit, and even destroy. Build your own playstyle in this first-person shooter.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/2073850/ss_4c5e6357b347a55ed929833ba793b57a79d2.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5-6600K",
+        "gpu": "NVIDIA GTX 1050 Ti",
+        "memory": "12 GB RAM",
+        "storage": "20 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5-9600K",
+        "gpu": "NVIDIA RTX 2070",
+        "memory": "16 GB RAM",
+        "storage": "20 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/16.png",
+      "title": "16+",
+      "description": "Violence"
+    },
+    "developer": "Embark Studios",
+    "publisher": "Embark Studios",
+    "release": "2023-12-07",
+    "genre": "Action, FPS"
+  },
+  "team-fortress-2": {
+    "slug": "team-fortress-2",
+    "title": "Team Fortress 2",
+    "youtube_id": "h_c3iQImXZg",
+    "description": "Nine distinct classes provide a broad range of tactical abilities and personalities.",
+    "about": "One of the most popular online action games of all time, Team Fortress 2 delivers constant free updates—new game modes, maps, equipment and, most importantly, hats.",
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/440/ss_4c5e6357b347a55ed929833ba793b57a79d2.1920x1080.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 7",
+        "cpu": "1.7 GHz",
+        "gpu": "DirectX 8.1 level",
+        "memory": "512 MB RAM",
+        "storage": "15 GB"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "cpu": "Pentium 4 3.0 GHz",
+        "gpu": "DirectX 9 level",
+        "memory": "1 GB RAM",
+        "storage": "15 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/16.png",
+      "title": "16+",
+      "description": "Violence"
+    },
+    "developer": "Valve",
+    "publisher": "Valve",
+    "release": "2007-10-10",
+    "genre": "Action, FPS"
+  },
+  "warhammer-40,000-space-marine-2": {
+    "slug": "warhammer-40,000-space-marine-2",
+    "title": "Warhammer 40,000 Space Marine 2",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Warhammer 40,000 Space Marine 2 is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Warhammer 40,000 Space Marine 2 features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "counter-strike-2": {
+    "slug": "counter-strike-2",
+    "title": "Counter Strike 2",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Counter Strike 2 is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Counter Strike 2 features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "final-fantasy-xiv": {
+    "slug": "final-fantasy-xiv",
+    "title": "Final Fantasy Xiv",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Final Fantasy Xiv is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Final Fantasy Xiv features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "honkai-star-rail": {
+    "slug": "honkai-star-rail",
+    "title": "Honkai Star Rail",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Honkai Star Rail is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Honkai Star Rail features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "call-of-duty-warzone": {
+    "slug": "call-of-duty-warzone",
+    "title": "Call Of Duty Warzone",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Call Of Duty Warzone is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Call Of Duty Warzone features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "borderlands-3": {
+    "slug": "borderlands-3",
+    "title": "Borderlands 3",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Borderlands 3 is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Borderlands 3 features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "runescape": {
+    "slug": "runescape",
+    "title": "Runescape",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Runescape is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Runescape features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "starcraft-ii": {
+    "slug": "starcraft-ii",
+    "title": "Starcraft Ii",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Starcraft Ii is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Starcraft Ii features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "teamfight-tactics": {
+    "slug": "teamfight-tactics",
+    "title": "Teamfight Tactics",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Teamfight Tactics is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Teamfight Tactics features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "guild-wars-2": {
+    "slug": "guild-wars-2",
+    "title": "Guild Wars 2",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Guild Wars 2 is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Guild Wars 2 features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      ""
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "magic-the-gathering-arena": {
+    "slug": "magic-the-gathering-arena",
+    "title": "Magic The Gathering Arena",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Magic The Gathering Arena is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Magic The Gathering Arena features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "maplestory": {
+    "slug": "maplestory",
+    "title": "Maplestory",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Maplestory is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Maplestory features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "brawlhalla": {
+    "slug": "brawlhalla",
+    "title": "Brawlhalla",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Brawlhalla is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Brawlhalla features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "marvel-snap": {
+    "slug": "marvel-snap",
+    "title": "Marvel Snap",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Marvel Snap is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Marvel Snap features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "legends-of-runeterra": {
+    "slug": "legends-of-runeterra",
+    "title": "Legends Of Runeterra",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Legends Of Runeterra is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Legends Of Runeterra features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "trackmania": {
+    "slug": "trackmania",
+    "title": "Trackmania",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Trackmania is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Trackmania features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "crab-game": {
+    "slug": "crab-game",
+    "title": "Crab Game",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Crab Game is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Crab Game features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "shadowverse-worlds-beyond": {
+    "slug": "shadowverse-worlds-beyond",
+    "title": "Shadowverse Worlds Beyond",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Shadowverse Worlds Beyond is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Shadowverse Worlds Beyond features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "archeage": {
+    "slug": "archeage",
+    "title": "Archeage",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Archeage is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Archeage features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "crossout": {
+    "slug": "crossout",
+    "title": "Crossout",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Crossout is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Crossout features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "planetside-2": {
+    "slug": "planetside-2",
+    "title": "Planetside 2",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Planetside 2 is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Planetside 2 features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "warface": {
+    "slug": "warface",
+    "title": "Warface",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Warface is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Warface features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "dauntless": {
+    "slug": "dauntless",
+    "title": "Dauntless",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Dauntless is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Dauntless features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "dc-universe-online": {
+    "slug": "dc-universe-online",
+    "title": "Dc Universe Online",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Dc Universe Online is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Dc Universe Online features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
+  },
+  "legends-of-idleon": {
+    "slug": "legends-of-idleon",
+    "title": "Legends Of Idleon",
+    "youtube_id": "dQw4w9WgXcQ",
+    "description": "Legends Of Idleon is an exciting game that offers an immersive experience. Explore new worlds and challenge yourself.",
+    "about": "Legends Of Idleon features stunning graphics and gameplay. Join millions of players in this epic adventure.",
+    "screenshots": [
+      "https://www.hdwallpapers.in/download/gameglobe_game-wide.jpg",
+      "https://marketplace.canva.com/EAE992exOJg/2/0/1600w/canva-deep-blue-and-white-futuristic-gaming-background-desktop-wallpaper-lI44SVUHuJE.jpg"
+    ],
+    "requirements": {
+      "minimum": {
+        "os": "Windows 10",
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GTX 1050",
+        "memory": "8 GB RAM",
+        "storage": "50 GB"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA RTX 3060",
+        "memory": "16 GB RAM",
+        "storage": "50 GB"
+      }
+    },
+    "age_rating": {
+      "img": "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+      "title": "12+",
+      "description": "Moderate Violence"
+    },
+    "developer": "Unknown Studio",
+    "publisher": "Global Games",
+    "release": "2024-01-01",
+    "genre": "Action, Adventure"
   }
 }

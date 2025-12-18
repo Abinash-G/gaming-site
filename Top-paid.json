@@ -45,13 +45,13 @@
     "title": "Grand Theft Auto V: Enhanced",
     "img": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/1280/GTAOnline.jpg",
     "rating": "4.8",
-    "link": "./Gamepage/game.html?game=gta-5-enhanced"
+    "link": "./Gamepage/game.html?game=gta-v"
   },
   {
     "title": "Grand Theft Auto V: Legacy",
     "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/library_600x900_2x.jpg",
     "rating": "4.7",
-    "link": "./Gamepage/game.html?game=gta-5-legacy"
+    "link": "./Gamepage/game.html?game=gta-v"
   },
   {
     "title": "GTA Triology Definitive Edition",
@@ -75,7 +75,7 @@
     "title": "Red Dead Redemption 2",
     "img": "https://assets.vg247.com/current//2018/05/red_dead_redemption_2_cover_art_1.jpg",
     "rating": "4.5",
-    "link": "./Gamepage/game.html?game=rdr2"
+    "link": "./Gamepage/game.html?game=red-dead-redemption-2"
   },
   {
     "title": "The Witcher 3",

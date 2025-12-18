@@ -105,7 +105,7 @@
     "title": "Grand Theft Auto V",
     "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/library_600x900_2x.jpg",
     "rating": "4.6",
-    "link": "./Gamepage/game.html?game=grand-theft-auto-v"
+    "link": "./Gamepage/game.html?game=gta-v"
   },
   {
     "title": "Roblox",
@@ -159,7 +159,7 @@
     "title": "Red Dead Redemption 2",
     "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/library_600x900_2x.jpg",
     "rating": "4.8",
-    "link": "./Gamepage/game.html?game=rdr2"
+    "link": "./Gamepage/game.html?game=red-dead-redemption-2"
   },
   {
     "title": "Dota 2",
@@ -183,7 +183,7 @@
     "title": "The Witcher 3: Wild Hunt",
     "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/library_600x900_2x.jpg",
     "rating": "4.9",
-    "link": "./Gamepage/game.html?game=the-witcher-3-wild-hunt"
+    "link": "./Gamepage/game.html?game=witcher-3"
   },
   {
     "title": "Stardew Valley",
@@ -321,13 +321,13 @@
     "title": "Control",
     "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/870780/library_600x900_2x.jpg",
     "rating": "4.1",
-    "link": "games/control.html"
+    "link": "./Gamepage/game.html?game=control"
   },
   {
     "title": "Disco Elysium",
     "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/library_600x900_2x.jpg",
     "rating": "4.7",
-    "link": "games/disco-elysium.html"
+    "link": "./Gamepage/game.html?game=disco-elysium"
   },
   {
     "title": "Teamfight Tactics",
@@ -375,13 +375,13 @@
     "title": "Assassin's Creed Valhalla",
     "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2208920/library_600x900_2x.jpg",
     "rating": "4.0",
-    "link": "games/assassins-creed-valhalla.html"
+    "link": "./Gamepage/game.html?game=assassins-creed-valhalla"
   },
   {
     "title": "Metro Exodus",
     "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/412020/library_600x900_2x.jpg",
     "rating": "4.3",
-    "link": "games/metro-exodus.html"
+    "link": "./Gamepage/game.html?game=metro-exodus"
   },
   {
     "title": "Legends of Runeterra",

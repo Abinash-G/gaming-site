@@ -112,7 +112,8 @@
 
   #modalImage {
     object-fit: contain !important;
-    padding: 35vh;
+    max-height: 90vh;
+    max-width: 90vw;
   }
 
   #button-playnow:hover {
@@ -322,7 +323,7 @@
           if (!res.ok) throw new Error('Failed to load assets/data.json');
           return res.json();
         })
-        .then(data => {
+        .then(async data => {
           // prefer slug map, else fallback to array or single object
           let game = null;
           if (slug && data && typeof data === 'object' && !Array.isArray(data) && data[slug]) {
@@ -330,14 +331,35 @@
           } else if (Array.isArray(data)) {
             game = slug ? data.find(g => g.slug === slug) || data[0] : data[0];
           } else {
-            game = data;
+            // fallback if structure isn't as expected
+            game = data[slug] || data;
           }
+
+          if (!game && slug) {
+            console.log("Game not found locally, trying to fetch from internet...");
+            try {
+              game = await fetchExternalGameData(slug);
+            } catch (e) {
+              console.warn("External fetch failed:", e);
+            }
+          }
+
           if (!game) throw new Error('No game data available');
           initPage(game);
         })
-        .catch(err => {
+        .catch(async err => {
           console.error(err);
-          document.body.innerHTML = '<p style="color:#eee;background:#111;padding:20px;">Could not load game data.</p>';
+          // Try absolute fallback if even local JSON load failed
+          if (slug) {
+            try {
+              const g = await fetchExternalGameData(slug);
+              initPage(g);
+            } catch (e) {
+              document.body.innerHTML = '<p style="color:#eee;background:#111;padding:20px;">Could not load game data.</p>';
+            }
+          } else {
+            document.body.innerHTML = '<p style="color:#eee;background:#111;padding:20px;">Could not load game data.</p>';
+          }
         });
     })();
 
@@ -357,14 +379,28 @@
       document.head.appendChild(s);
 
       // YouTube setup
-      window.onYouTubeIframeAPIReady = () => createYouTubePlayer(game.youtube_id);
+      window.onYouTubeIframeAPIReady = () => createYouTubePlayer(game.youtube_id, game.title);
     }
 
     let ytPlayer, playerReady = false;
 
-    function createYouTubePlayer(videoId) {
-      ytPlayer = new YT.Player("yt-bg", {
-        videoId,
+    const FALLBACK_TRAILERS = [
+      "VUlzltBX3Ac", // Black Myth: Wukong
+      "K0u_kAWLJOA", // God of War Ragnarok
+      "qICbK5P7c0Y", // Cyberpunk 2077
+      "eaW0tYpxyp0", // RDR2
+      "c0i88t0Kacs", // Witcher 3
+      "JfVOs4VSpmA", // Spider-Man 2
+      "QkkoHAzjnUs"  // Elden Ring
+    ];
+
+    function createYouTubePlayer(videoId, gameTitle) {
+      // Logic:
+      // 1. If videoId exists, use it.
+      // 2. If videoId is empty, start with search.
+      // 3. onError -> fall back to search.
+
+      const playerConfig = {
         playerVars: {
           autoplay: 1,
           mute: 1,
@@ -372,9 +408,9 @@
           modestbranding: 1,
           rel: 0,
           loop: 1,
-          playlist: videoId,
           playsinline: 1,
-          fs: 0
+          fs: 0,
+          origin: window.location.origin
         },
         events: {
           onReady: e => {
@@ -383,10 +419,55 @@
             e.target.playVideo();
           },
           onStateChange: e => {
-            if (e.data === YT.PlayerState.ENDED) e.target.seekTo(0);
+            // ensure loop
+            if (e.data === YT.PlayerState.ENDED) {
+              if (typeof e.target.playVideo === 'function') e.target.playVideo();
+            }
+          },
+          onError: (e) => {
+            console.warn("YouTube Player Error:", e.data);
+
+            // Prevent infinite loops if fallback also fails
+            if (e.target._hasTriedSearch) {
+              console.log("Search fallback also failed. Loading random safe trailer.");
+              const randomId = FALLBACK_TRAILERS[Math.floor(Math.random() * FALLBACK_TRAILERS.length)];
+              e.target.loadVideoById(randomId);
+              return;
+            }
+
+            if (gameTitle) {
+              e.target._hasTriedSearch = true; // Mark as attempted
+              const query = gameTitle + " visual gameplay trailer";
+              console.log("Fallback to search:", query);
+              try {
+                e.target.loadPlaylist({
+                  listType: 'search',
+                  list: query
+                });
+              } catch (err) {
+                const randomId = FALLBACK_TRAILERS[Math.floor(Math.random() * FALLBACK_TRAILERS.length)];
+                e.target.loadVideoById(randomId);
+              }
+            } else {
+              const randomId = FALLBACK_TRAILERS[Math.floor(Math.random() * FALLBACK_TRAILERS.length)];
+              e.target.loadVideoById(randomId);
+            }
           }
         }
-      });
+      };
+
+      if (videoId) {
+        playerConfig.videoId = videoId;
+        playerConfig.playerVars.playlist = videoId;
+      } else {
+        // No ID, perform search immediately
+        const query = (gameTitle || "Action Game") + " gameplay trailer";
+        console.log("No ID, defaulting to search:", query);
+        playerConfig.playerVars.listType = 'search';
+        playerConfig.playerVars.list = query;
+      }
+
+      ytPlayer = new YT.Player("yt-bg", playerConfig);
 
       setupVisibilityControl();
     }
@@ -414,31 +495,40 @@
 
     function renderDetails(game) {
       const details = document.getElementById("game-details");
+
+      // Conditional Carousel
+      let carouselHTML = "";
+      if (game.screenshots && game.screenshots.length > 0) {
+        carouselHTML = `
+        <div id="gameShots" class="carousel slide pop" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            ${game.screenshots.map((src, i) => `
+              <div class="carousel-item ${i === 0 ? "active" : ""}">
+                <img src="${src}"
+                     class="d-block w-100 rounded screenshot pointer"
+                     style="object-fit:cover;cursor: url('./Mouse/pointer.svg') 11 2, pointer;"
+                     alt="Screenshot" 
+                     onerror="handleImageError(this)" />
+              </div>
+            `).join("")}
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#gameShots" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#gameShots" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>`;
+      }
+
       details.innerHTML = `
     <div class="row m-0 p-0">
       <div class="col-lg-1 d-none d-lg-block"></div>
       <div class="col-12 col-lg-7">
-        <div id="gameShots" class="carousel slide pop" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    ${game.screenshots.map((src, i) => `
-      <div class="carousel-item ${i === 0 ? "active" : ""}">
-        <img src="${src}"
-             class="d-block w-100 rounded screenshot pointer"
-             style="object-fit:cover;cursor: url('./Mouse/pointer.svg') 11 2, pointer;"
-             alt="Screenshot" />
-      </div>
-    `).join("")}
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#gameShots" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-
-  <button class="carousel-control-next" type="button" data-bs-target="#gameShots" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
-
+        
+        ${carouselHTML}
 
         <div class="py-3 text-secondary font">${game.description}</div>
 
@@ -714,12 +804,80 @@
 
     })();
 
-    // Loading
+    async function fetchExternalGameData(slug) {
+      // Convert slug to a likely Wikipedia title
+      // e.g., "god-of-war" -> "God_of_War"
+      // "red-dead-redemption-2" -> "Red_Dead_Redemption_2"
+      const title = slug
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join('_');
 
+      const wikiUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${title}`;
+      const res = await fetch(wikiUrl);
+      if (!res.ok) throw new Error("Wiki not found");
+      const json = await res.json();
+
+      // Construct a partial game object
+      return {
+        slug: slug,
+        title: json.title,
+        description: json.extract || "No description available.",
+        about: json.extract || "No details available.",
+        // Use the original image from wiki if available, else a placeholder
+        screenshots: json.originalimage ? [json.originalimage.source] : [],
+        youtube_id: "", // Empty to trigger search fallback
+        requirements: {
+          minimum: {
+            os: "Windows 10",
+            cpu: "Intel Core i5",
+            gpu: "NVIDIA GTX 1050",
+            memory: "8 GB RAM",
+            storage: "50 GB"
+          },
+          recommended: {
+            os: "Windows 10",
+            cpu: "Intel Core i7",
+            gpu: "NVIDIA RTX 2060",
+            memory: "16 GB RAM",
+            storage: "50 GB"
+          }
+        },
+        age_rating: {
+          img: "https://rating.pegi.info/assets/images/games/age_threshold_icons/12.png",
+          title: "PG",
+          description: "Moderate"
+        },
+        developer: "Unknown",
+        publisher: "Unknown",
+        release: "2024",
+        genre: "Action"
+      };
+    }
+
+    // Loading
     window.addEventListener("load", () => {
       document.getElementById("loader").style.display = "none";
     });
 
+    function handleImageError(img) {
+      if (!img) return;
+      const item = img.closest('.carousel-item');
+      if (!item) return;
+
+      const carouselInner = item.parentElement;
+      const carousel = img.closest('.carousel');
+
+      const wasActive = item.classList.contains('active');
+      item.remove();
+
+      const remainingItems = carouselInner.querySelectorAll('.carousel-item');
+      if (remainingItems.length === 0) {
+        if (carousel) carousel.remove();
+      } else if (wasActive) {
+        remainingItems[0].classList.add('active');
+      }
+    }
   </script>
 </body>
 
